@@ -27,7 +27,6 @@ def emit_readme(root: Path, manifest_payload: dict[str, Any]) -> None:
         ["ipv4_cidrs", _fmt(manifest_payload["ipv4_cidr_count"])],
         ["ipv6_cidrs", _fmt(manifest_payload["ipv6_cidr_count"])],
         ["ipv4_addrs", _fmt(manifest_payload["ipv4_address_count"])],
-        ["ipv6_addrs", _fmt(manifest_payload["ipv6_address_count"])],
     ]
 
     feed_rows: list[list[str]] = []
@@ -45,7 +44,6 @@ def emit_readme(root: Path, manifest_payload: dict[str, Any]) -> None:
                 _fmt(feed["ipv4_cidr_count"]),
                 _fmt(feed["ipv6_cidr_count"]),
                 _fmt(feed["ipv4_address_count"]),
-                _fmt(feed["ipv6_address_count"]),
                 f"`{feed['updated_at']}`",
                 f"{json_link} {txt_link} {pa_link} {pf_link} {src_link}",
             ]
@@ -81,7 +79,7 @@ def emit_readme(root: Path, manifest_payload: dict[str, Any]) -> None:
             _table(["field", "value"], snapshot_rows),
             "## Feeds",
             _table(
-                ["dataset", "cidrs", "v4", "v6", "ipv4_addrs", "ipv6_addrs", "updated", "links"],
+                ["dataset", "cidrs", "v4", "v6", "ipv4_addrs", "updated", "links"],
                 feed_rows,
             ),
             "## Outputs",

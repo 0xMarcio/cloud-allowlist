@@ -107,7 +107,7 @@ def test_emitters_write_expected_files(tmp_path: Path) -> None:
     assert (tmp_path / "paloalto" / "ip" / "all.txt").exists()
     assert (tmp_path / "pfsense" / "urltable" / "all.txt").exists()
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
-    assert "| dataset | cidrs | v4 | v6 | ipv4_addrs | ipv6_addrs | updated | links |" in readme
+    assert "| dataset | cidrs | v4 | v6 | ipv4_addrs | updated | links |" in readme
     assert "[json](dist/json/vendors/aws.json)" in readme
     tfvars = json.loads((tmp_path / "terraform" / "cloud_allowlist.auto.tfvars.json").read_text(encoding="utf-8"))
     assert "cloud_allowlist" in tfvars
