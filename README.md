@@ -10,8 +10,6 @@
 | ipv4_cidrs | 14065 |
 | ipv6_cidrs | 4197 |
 | ipv4_addrs | 152833311 |
-| feed_count | 6 |
-| stale_feed_count | 0 |
 
 ## Feeds
 

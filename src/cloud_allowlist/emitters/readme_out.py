@@ -23,8 +23,6 @@ def emit_readme(root: Path, manifest_payload: dict[str, Any]) -> None:
         ["ipv4_cidrs", str(manifest_payload["ipv4_cidr_count"])],
         ["ipv6_cidrs", str(manifest_payload["ipv6_cidr_count"])],
         ["ipv4_addrs", str(manifest_payload["ipv4_address_count"])],
-        ["feed_count", str(manifest_payload["feed_count"])],
-        ["stale_feed_count", str(manifest_payload["stale_feed_count"])],
     ]
 
     feed_rows: list[list[str]] = []
