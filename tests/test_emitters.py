@@ -7,6 +7,7 @@ from cloud_allowlist.emitters.csv_out import emit_csv_outputs
 from cloud_allowlist.emitters.json_out import emit_json_outputs
 from cloud_allowlist.emitters.paloalto_out import emit_paloalto_outputs
 from cloud_allowlist.emitters.pfsense_out import emit_pfsense_outputs
+from cloud_allowlist.emitters.readme_out import emit_readme
 from cloud_allowlist.emitters.terraform_out import emit_terraform_outputs
 from cloud_allowlist.emitters.txt_out import build_text_collections, emit_txt_outputs
 from cloud_allowlist.model import FeedManifest, NormalizedRecord, Snapshot
@@ -65,7 +66,14 @@ def test_emitters_write_expected_files(tmp_path: Path) -> None:
             FeedManifest(vendor="m365", feed="m365-endpoints", instance="Worldwide", upstream_url="fixture://m365", record_count=1, fetch_status="success", stale=False),
         ],
     )
-    manifest_payload = {"snapshot_date": "2026-04-17", "feeds": [], "record_count": len(records)}
+    manifest_payload = {
+        "snapshot_date": "2026-04-17",
+        "feeds": [],
+        "record_count": len(records),
+        "cidr_count": 3,
+        "feed_count": 3,
+        "stale_feed_count": 0,
+    }
 
     emit_json_outputs(tmp_path, snapshot, manifest_payload)
     emit_csv_outputs(tmp_path, records)
@@ -73,6 +81,7 @@ def test_emitters_write_expected_files(tmp_path: Path) -> None:
     emit_terraform_outputs(tmp_path, records)
     emit_paloalto_outputs(tmp_path, records)
     emit_pfsense_outputs(tmp_path, records)
+    emit_readme(tmp_path, manifest_payload)
 
     assert (tmp_path / "json" / "all.json").exists()
     assert (tmp_path / "csv" / "all.csv").exists()
@@ -80,6 +89,7 @@ def test_emitters_write_expected_files(tmp_path: Path) -> None:
     assert (tmp_path / "txt" / "vendors" / "aws.txt").exists()
     assert (tmp_path / "paloalto" / "ip" / "all.txt").exists()
     assert (tmp_path / "pfsense" / "urltable" / "all.txt").exists()
+    assert "| field | value |" in (tmp_path / "README.md").read_text(encoding="utf-8")
     tfvars = json.loads((tmp_path / "terraform" / "cloud_allowlist.auto.tfvars.json").read_text(encoding="utf-8"))
     assert "cloud_allowlist" in tfvars
 

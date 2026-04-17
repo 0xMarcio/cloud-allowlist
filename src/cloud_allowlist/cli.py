@@ -18,6 +18,7 @@ from cloud_allowlist.emitters.csv_out import emit_csv_outputs
 from cloud_allowlist.emitters.json_out import emit_json_outputs
 from cloud_allowlist.emitters.paloalto_out import emit_paloalto_outputs
 from cloud_allowlist.emitters.pfsense_out import emit_pfsense_outputs
+from cloud_allowlist.emitters.readme_out import emit_readme
 from cloud_allowlist.emitters.terraform_out import emit_terraform_outputs
 from cloud_allowlist.emitters.txt_out import build_text_collections, emit_txt_outputs
 from cloud_allowlist.io_utils import (
@@ -222,6 +223,7 @@ def _emit_outputs(root: Path, snapshot: Snapshot) -> None:
     emit_terraform_outputs(dist_dir, snapshot.records)
     emit_paloalto_outputs(dist_dir, snapshot.records)
     emit_pfsense_outputs(dist_dir, snapshot.records)
+    emit_readme(root, manifest_payload)
 
 
 def _build_snapshot(feed_states: list[FeedState], snapshot_date: str) -> Snapshot:

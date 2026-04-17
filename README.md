@@ -1,73 +1,47 @@
 # cloud-allowlist
 
-Builds one normalized allowlist dataset from these official feeds:
+## Snapshot
 
-- AWS
-- Microsoft 365
-- GitHub Meta
-- Google `goog.json`
-- Google `cloud.json`
-- Atlassian
+| field | value |
+| --- | --- |
+| snapshot_date | `2026-04-17` |
+| record_count | 23849 |
+| unique_cidrs | 18262 |
+| feed_count | 6 |
+| stale_feed_count | 0 |
 
-Outputs are written to `dist/` in:
+## Feeds
 
-- JSON
-- CSV
-- TXT
-- Terraform tfvars JSON
-- Palo Alto-friendly TXT
-- pfSense URL table TXT
-- daily change reports
+| vendor | feed | instance | records | unique_cidrs | published | version | status |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| `atlassian` | `atlassian-ip-ranges` | `-` | 612 | 373 | `2026-04-07T02:01:27.152558` | `1775527287` | `success` |
+| `aws` | `aws-ip-ranges` | `-` | 15498 | 10245 | `2026-04-17-18-27-05` | `1776450425` | `success` |
+| `github` | `github-meta` | `-` | 6589 | 6535 | `-` | `sha256:617eb43da216dd03034baff76775c6739bf4cd8f89027737ce11055a815211ba` | `success` |
+| `google` | `google-cloud` | `-` | 910 | 910 | `2026-04-17T13:16:23.22253` | `1776456983222` | `success` |
+| `google` | `google-goog` | `-` | 111 | 111 | `2026-04-17T13:16:23.22253` | `1776456983222` | `success` |
+| `m365` | `m365-endpoints` | `Worldwide` | 129 | 93 | `-` | `2026033100` | `success` |
 
-State is file-based under `state/`. There is no database, no Docker, and no external service dependency.
+## Files
 
-## Run
+| dataset | path |
+| --- | --- |
+| manifest | `dist/manifest.json` |
+| all_json | `dist/json/all.json` |
+| all_csv | `dist/csv/all.csv` |
+| all_txt | `dist/txt/all.txt` |
+| all_txt_ipv4 | `dist/txt/all-ipv4.txt` |
+| all_txt_ipv6 | `dist/txt/all-ipv6.txt` |
+| terraform | `dist/terraform/cloud_allowlist.auto.tfvars.json` |
+| paloalto | `dist/paloalto/ip/all.txt` |
+| pfsense | `dist/pfsense/urltable/all.txt` |
+| latest_changes_md | `dist/changes/latest.md` |
+| latest_changes_json | `dist/changes/latest.json` |
+| snapshot_history | `state/history/snapshots/` |
 
-```bash
-python -m pip install -e .[dev]
-cloud-allowlist update --use-fixtures
-pytest -q
-```
+## Raw URLs
 
-Live update:
-
-```bash
-cloud-allowlist update
-```
-
-Other commands:
-
-```bash
-cloud-allowlist diff --from-date YYYY-MM-DD --to-date YYYY-MM-DD
-cloud-allowlist validate
-```
-
-## Important paths
-
-- `dist/manifest.json`
-- `dist/json/all.json`
-- `dist/csv/all.csv`
-- `dist/txt/all.txt`
-- `dist/terraform/cloud_allowlist.auto.tfvars.json`
-- `dist/paloalto/ip/`
-- `dist/pfsense/urltable/`
-- `dist/changes/latest.md`
-- `state/history/snapshots/`
-
-## GitHub Actions
-
-- `.github/workflows/ci.yml` runs tests and a fixture-based smoke build.
-- `.github/workflows/update.yml` runs daily and on manual dispatch, refreshes data, and commits `dist/` and `state/` when outputs change.
-
-## Notes
-
-- Microsoft 365 is instance-based. `Worldwide` is enabled by default in `config/sources.yaml`.
-- If one upstream fails, the last known good data for that feed is reused and marked `stale`.
-- GitHub Meta is useful, but not a complete list of every GitHub-hosted network path.
-- Google `goog.json` and `cloud.json` are different official feeds and stay separate here.
-
-## Example raw URLs
-
-- `https://raw.githubusercontent.com/0xMarcio/cloud-allowlist/main/dist/txt/all.txt`
-- `https://raw.githubusercontent.com/0xMarcio/cloud-allowlist/main/dist/paloalto/ip/vendors/github.txt`
-- `https://raw.githubusercontent.com/0xMarcio/cloud-allowlist/main/dist/pfsense/urltable/vendors/aws.txt`
+| dataset | url |
+| --- | --- |
+| all_txt | `https://raw.githubusercontent.com/0xMarcio/cloud-allowlist/main/dist/txt/all.txt` |
+| github_paloalto | `https://raw.githubusercontent.com/0xMarcio/cloud-allowlist/main/dist/paloalto/ip/vendors/github.txt` |
+| aws_pfsense | `https://raw.githubusercontent.com/0xMarcio/cloud-allowlist/main/dist/pfsense/urltable/vendors/aws.txt` |

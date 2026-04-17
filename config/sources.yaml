@@ -1,5 +1,3 @@
-# Default daily schedule note:
-# This repo is intended to run once per day via .github/workflows/update.yml.
 enabled_vendors: ["aws", "m365", "github", "google", "atlassian"]
 m365_instances: ["Worldwide"]
 timeouts:

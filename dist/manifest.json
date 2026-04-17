@@ -21,14 +21,14 @@
     },
     {
       "details": {
-        "createDate": "2026-04-15-21-07-04",
-        "syncToken": "1776287224"
+        "createDate": "2026-04-17-18-27-05",
+        "syncToken": "1776450425"
       },
       "feed": "aws-ip-ranges",
       "fetch_status": "success",
-      "record_count": 15497,
-      "source_published_at": "2026-04-15-21-07-04",
-      "source_version": "1776287224",
+      "record_count": 15498,
+      "source_published_at": "2026-04-17-18-27-05",
+      "source_version": "1776450425",
       "stale": false,
       "unique_cidr_count": 10245,
       "upstream_url": "https://ip-ranges.amazonaws.com/ip-ranges.json",
@@ -281,14 +281,14 @@
     },
     {
       "details": {
-        "creationTime": "2026-04-17T07:11:17.07738",
-        "syncToken": "1776435077077"
+        "creationTime": "2026-04-17T13:16:23.22253",
+        "syncToken": "1776456983222"
       },
       "feed": "google-cloud",
       "fetch_status": "success",
       "record_count": 910,
-      "source_published_at": "2026-04-17T07:11:17.07738",
-      "source_version": "1776435077077",
+      "source_published_at": "2026-04-17T13:16:23.22253",
+      "source_version": "1776456983222",
       "stale": false,
       "unique_cidr_count": 910,
       "upstream_url": "https://www.gstatic.com/ipranges/cloud.json",
@@ -296,14 +296,14 @@
     },
     {
       "details": {
-        "creationTime": "2026-04-17T07:11:17.07738",
-        "syncToken": "1776435077077"
+        "creationTime": "2026-04-17T13:16:23.22253",
+        "syncToken": "1776456983222"
       },
       "feed": "google-goog",
       "fetch_status": "success",
       "record_count": 111,
-      "source_published_at": "2026-04-17T07:11:17.07738",
-      "source_version": "1776435077077",
+      "source_published_at": "2026-04-17T13:16:23.22253",
+      "source_version": "1776456983222",
       "stale": false,
       "unique_cidr_count": 111,
       "upstream_url": "https://www.gstatic.com/ipranges/goog.json",
@@ -324,7 +324,7 @@
       "vendor": "m365"
     }
   ],
-  "record_count": 23848,
+  "record_count": 23849,
   "snapshot_date": "2026-04-17",
   "stale_feed_count": 0,
   "vendor_count": 5
