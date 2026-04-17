@@ -1,0 +1,18 @@
+# Default daily schedule note:
+# This repo is intended to run once per day via .github/workflows/update.yml.
+enabled_vendors: ["aws", "m365", "github", "google", "atlassian"]
+m365_instances: ["Worldwide"]
+timeouts:
+  default_seconds: 20
+  github_seconds: 20
+http:
+  user_agent: "cloud-allowlist/0.1 (+https://github.com/0xMarcio/cloud-allowlist)"
+  github_api_version: "2022-11-28"
+history_retention_days: 35
+outputs:
+  json: true
+  csv: true
+  txt: true
+  terraform: true
+  paloalto: true
+  pfsense: true

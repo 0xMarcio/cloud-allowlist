@@ -1,0 +1,52 @@
+{
+  "verifiable_password_authentication": false,
+  "hooks": [
+    "192.30.252.0/22",
+    "185.199.108.0/22"
+  ],
+  "web": [
+    "140.82.112.0/20"
+  ],
+  "api": [
+    "140.82.113.0/24"
+  ],
+  "git": [
+    "192.30.255.0/24"
+  ],
+  "packages": [
+    "140.82.121.0/24"
+  ],
+  "pages": [
+    "185.199.108.0/22"
+  ],
+  "importer": [
+    "140.82.118.0/24"
+  ],
+  "actions": [
+    "4.148.0.0/16"
+  ],
+  "actions_macos": [
+    "13.105.0.0/16"
+  ],
+  "dependabot": [
+    "140.82.121.0/24"
+  ],
+  "copilot": [
+    "20.201.28.151/32"
+  ],
+  "github_enterprise_importer": [
+    "20.99.172.64/28"
+  ],
+  "ssh_keys": [
+    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOexample"
+  ],
+  "domains": {
+    "website": [
+      "github.com",
+      "www.github.com"
+    ],
+    "codespaces": [
+      "*.github.dev"
+    ]
+  }
+}

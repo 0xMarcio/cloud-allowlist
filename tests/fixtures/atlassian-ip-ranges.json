@@ -1,0 +1,38 @@
+{
+  "creationDate": "2026-04-17T00:00:00.000Z",
+  "syncToken": "1760003000",
+  "md5": "1f3870be274f6c49b3e31a0c6728957f",
+  "url": "https://ip-ranges.atlassian.com/",
+  "items": [
+    {
+      "id": "jira-egress",
+      "product": "jira",
+      "direction": "egress",
+      "region": "global",
+      "cidr": "104.192.136.0/21",
+      "perimeter": "commercial"
+    },
+    {
+      "id": "confluence-ingress",
+      "product": "confluence",
+      "direction": "ingress",
+      "region": "us-east-1",
+      "network": {
+        "cidr": "13.52.5.0/24"
+      },
+      "tags": [
+        "prod",
+        "edge"
+      ]
+    },
+    {
+      "id": "bitbucket-ipv6",
+      "product": "bitbucket",
+      "direction": "egress",
+      "ranges": [
+        "2401:1d80:3000::/36"
+      ],
+      "perimeter": "commercial"
+    }
+  ]
+}

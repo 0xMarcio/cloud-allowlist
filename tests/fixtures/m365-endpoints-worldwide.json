@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "serviceArea": "Exchange",
+    "serviceAreaDisplayName": "Exchange Online",
+    "category": "Optimize",
+    "required": true,
+    "expressRoute": false,
+    "tcpPorts": "443",
+    "udpPorts": "3478-3481",
+    "ips": [
+      "40.96.0.0/13",
+      "40.104.0.0/15"
+    ],
+    "urls": [
+      "outlook.office.com",
+      "outlook.office365.com"
+    ],
+    "notes": "Primary Exchange Online network ranges"
+  },
+  {
+    "id": 2,
+    "serviceArea": "Skype",
+    "serviceAreaDisplayName": "Microsoft Teams",
+    "category": "Allow",
+    "required": false,
+    "expressRoute": true,
+    "tcpPorts": "443",
+    "udpPorts": "3478-3481",
+    "ips": [
+      "52.112.0.0/14",
+      "2603:1036::/38"
+    ],
+    "urls": [
+      "teams.microsoft.com"
+    ],
+    "notes": "Teams signaling and media"
+  }
+]

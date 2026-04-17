@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1001,
+    "endpointSetId": 1,
+    "disposition": "Add",
+    "effectiveDate": "2026-04-20T00:00:00Z",
+    "ips": [
+      "40.104.0.0/15"
+    ]
+  },
+  {
+    "id": 1002,
+    "endpointSetId": 2,
+    "disposition": "Add",
+    "effectiveDate": "2026-04-22T00:00:00Z",
+    "ips": [
+      "52.112.0.0/14"
+    ]
+  }
+]

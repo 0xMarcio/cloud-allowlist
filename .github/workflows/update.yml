@@ -1,0 +1,47 @@
+name: Update Allowlist Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
+
+concurrency:
+  group: cloud-allowlist-update
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install package
+        run: python -m pip install -e .[dev]
+
+      - name: Run tests
+        run: pytest -q
+
+      - name: Refresh allowlists
+        run: cloud-allowlist update
+
+      - name: Commit changes
+        run: |
+          git add dist state
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name "cloud-allowlist-bot"
+          git config user.email "cloud-allowlist-bot@users.noreply.github.com"
+          git commit -m "chore(data): refresh cloud allowlists for $(date -u +%F)"
+          git push origin HEAD:${GITHUB_REF_NAME}
