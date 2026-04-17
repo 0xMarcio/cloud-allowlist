@@ -1,41 +1,27 @@
 # cloud-allowlist
 
-`cloud-allowlist` aggregates official machine-readable cloud allowlist feeds into one normalized dataset and emits deterministic files under `dist/` for text consumers, Terraform, Palo Alto, and pfSense. It keeps a small rolling snapshot history under `state/`, writes a daily change report, and reuses the last known good feed data when one upstream is temporarily unavailable.
+Builds one normalized allowlist dataset from these official feeds:
 
-## Supported sources
+- AWS
+- Microsoft 365
+- GitHub Meta
+- Google `goog.json`
+- Google `cloud.json`
+- Atlassian
 
-- AWS: `https://ip-ranges.amazonaws.com/ip-ranges.json`
-- Microsoft 365: version, endpoints, and changes APIs for configurable instances
-- GitHub Meta: `https://api.github.com/meta`
-- Google `goog.json` and `cloud.json`
-- Atlassian IP ranges: `https://ip-ranges.atlassian.com/`
+Outputs are written to `dist/` in:
 
-## Repository layout
+- JSON
+- CSV
+- TXT
+- Terraform tfvars JSON
+- Palo Alto-friendly TXT
+- pfSense URL table TXT
+- daily change reports
 
-```text
-.
-├── .github/workflows/
-├── config/sources.yaml
-├── dist/
-├── src/cloud_allowlist/
-├── state/
-└── tests/fixtures/
-```
+State is file-based under `state/`. There is no database, no Docker, and no external service dependency.
 
-Key paths:
-
-- `dist/manifest.json`: run manifest with per-feed status, versions, counts, and stale flags
-- `dist/json/`: normalized JSON outputs and vendor slices
-- `dist/csv/all.csv`: one row per normalized record
-- `dist/txt/`: IP-only line outputs
-- `dist/terraform/cloud_allowlist.auto.tfvars.json`: Terraform-friendly map of CIDR lists
-- `dist/paloalto/ip/`: Palo Alto-friendly IP lists
-- `dist/pfsense/urltable/`: pfSense URL table style lists
-- `dist/changes/latest.md`: latest human-readable change report
-- `state/history/snapshots/YYYY-MM-DD/normalized.json.gz`: deterministic compressed daily snapshot
-- `state/latest/raw/`: latest successful raw upstream payloads
-
-## Local usage
+## Run
 
 ```bash
 python -m pip install -e .[dev]
@@ -49,60 +35,39 @@ Live update:
 cloud-allowlist update
 ```
 
-Historical diff from saved snapshots:
+Other commands:
 
 ```bash
-cloud-allowlist diff --from-date 2026-04-16 --to-date 2026-04-17
-```
-
-Validation:
-
-```bash
+cloud-allowlist diff --from-date YYYY-MM-DD --to-date YYYY-MM-DD
 cloud-allowlist validate
 ```
 
-## How it works
+## Important paths
 
-- All adapters normalize into one canonical record model.
-- CIDRs are canonicalized with `ipaddress`.
-- Normalized records are sorted deterministically and deduplicated only when every normalized field matches.
-- Latest state is file-based only. There is no database and no external service dependency.
-- If one vendor fetch fails after a successful prior run, the repo reuses that vendor's last known good normalized data, marks it `stale`, and records the failure in `dist/manifest.json` and the change report.
-- If every enabled feed fails, the run exits non-zero instead of silently publishing a fully stale dataset.
+- `dist/manifest.json`
+- `dist/json/all.json`
+- `dist/csv/all.csv`
+- `dist/txt/all.txt`
+- `dist/terraform/cloud_allowlist.auto.tfvars.json`
+- `dist/paloalto/ip/`
+- `dist/pfsense/urltable/`
+- `dist/changes/latest.md`
+- `state/history/snapshots/`
 
-## GitHub Actions automation
+## GitHub Actions
 
-`/.github/workflows/ci.yml` runs on pushes and pull requests. It installs the package, runs `pytest -q`, and runs a fixture-based smoke build.
+- `.github/workflows/ci.yml` runs tests and a fixture-based smoke build.
+- `.github/workflows/update.yml` runs daily and on manual dispatch, refreshes data, and commits `dist/` and `state/` when outputs change.
 
-`/.github/workflows/update.yml` runs daily and on manual dispatch. It:
+## Notes
 
-- installs the package
-- runs tests
-- runs `cloud-allowlist update`
-- commits `dist/` and `state/` when outputs changed
+- Microsoft 365 is instance-based. `Worldwide` is enabled by default in `config/sources.yaml`.
+- If one upstream fails, the last known good data for that feed is reused and marked `stale`.
+- GitHub Meta is useful, but not a complete list of every GitHub-hosted network path.
+- Google `goog.json` and `cloud.json` are different official feeds and stay separate here.
 
-Normal GitHub Actions enablement is the only manual step outside local execution.
+## Example raw URLs
 
-## Consuming generated files
-
-TXT, Palo Alto, and pfSense outputs are IP/CIDR-only and dedupe by CIDR. JSON and CSV retain richer metadata such as Microsoft 365 URLs, service area details, GitHub domains metadata, Google scope, and Atlassian item metadata.
-
-Examples:
-
-- Terraform: load `dist/terraform/cloud_allowlist.auto.tfvars.json`
-- Palo Alto: import `dist/paloalto/ip/all.txt` or vendor-specific files such as `dist/paloalto/ip/vendors/github.txt`
-- pfSense URL Table: use `dist/pfsense/urltable/all.txt` or vendor-specific files such as `dist/pfsense/urltable/vendors/aws.txt`
-
-Raw GitHub URL examples once the repo is published:
-
-- `https://raw.githubusercontent.com/0xMarcio/cloud-allowlist/main/dist/paloalto/ip/all.txt`
+- `https://raw.githubusercontent.com/0xMarcio/cloud-allowlist/main/dist/txt/all.txt`
 - `https://raw.githubusercontent.com/0xMarcio/cloud-allowlist/main/dist/paloalto/ip/vendors/github.txt`
-- `https://raw.githubusercontent.com/0xMarcio/cloud-allowlist/main/dist/pfsense/urltable/all.txt`
 - `https://raw.githubusercontent.com/0xMarcio/cloud-allowlist/main/dist/pfsense/urltable/vendors/aws.txt`
-
-## Caveats
-
-- GitHub Meta is useful but not exhaustive for every GitHub-hosted service path.
-- Microsoft 365 data is instance-based. `Worldwide` is enabled by default, and other supported instances are configurable in `config/sources.yaml`.
-- Google publishes both `goog.json` and `cloud.json`; they are separate official feeds with different meanings and remain separate here.
-- A stale feed fallback keeps prior data in outputs instead of dropping the vendor entirely, but it is still marked stale until the upstream recovers.
