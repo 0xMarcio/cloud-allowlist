@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from argparse import ArgumentParser, Namespace
 from datetime import date, timedelta
+from ipaddress import ip_network
 from pathlib import Path
 from typing import Any
 import sys
@@ -179,24 +180,67 @@ def _get_m365_client_id(root: Path, instance: str, client_ids: dict[str, str]) -
 
 def _build_manifest_payload(snapshot: Snapshot) -> dict[str, Any]:
     collections = build_text_collections(snapshot.records)
-    per_feed_unique_counts: dict[str, int] = {}
-    grouped: dict[str, set[str]] = {}
+    per_feed_stats: dict[str, dict[str, Any]] = {}
+    overall_cidrs = {record.cidr for record in snapshot.records}
+
+    def ipv4_union_size(cidrs: set[str]) -> int:
+        ranges = sorted(
+            (
+                int(network.network_address),
+                int(network.broadcast_address),
+            )
+            for network in (ip_network(cidr, strict=False) for cidr in cidrs)
+            if network.version == 4
+        )
+        if not ranges:
+            return 0
+        merged: list[tuple[int, int]] = []
+        for start, end in ranges:
+            if not merged or start > merged[-1][1] + 1:
+                merged.append((start, end))
+                continue
+            merged[-1] = (merged[-1][0], max(merged[-1][1], end))
+        return sum(end - start + 1 for start, end in merged)
+
     for record in snapshot.records:
         key = group_label(record.vendor, record.feed, record.instance)
-        grouped.setdefault(key, set()).add(record.cidr)
-    for key, values in grouped.items():
-        per_feed_unique_counts[key] = len(values)
+        stats = per_feed_stats.setdefault(
+            key,
+            {
+                "dataset": output_name(record.vendor, record.feed, record.instance),
+                "cidrs": set(),
+                "ipv4_cidrs": set(),
+                "ipv6_cidrs": set(),
+                "updated_values": [],
+            },
+        )
+        stats["cidrs"].add(record.cidr)
+        if record.family == 4:
+            stats["ipv4_cidrs"].add(record.cidr)
+        else:
+            stats["ipv6_cidrs"].add(record.cidr)
+        stats["updated_values"].append(record.source_published_at or record.fetched_at)
 
     feeds: list[dict[str, Any]] = []
     for manifest in sorted(snapshot.manifests, key=lambda item: (item.vendor, item.feed, item.instance or "")):
         payload = manifest.to_dict()
-        payload["unique_cidr_count"] = per_feed_unique_counts.get(group_label(manifest.vendor, manifest.feed, manifest.instance), 0)
+        stats = per_feed_stats.get(group_label(manifest.vendor, manifest.feed, manifest.instance), {})
+        cidrs = stats.get("cidrs", set())
+        payload["dataset"] = stats.get("dataset", output_name(manifest.vendor, manifest.feed, manifest.instance))
+        payload["unique_cidr_count"] = len(cidrs)
+        payload["ipv4_cidr_count"] = len(stats.get("ipv4_cidrs", set()))
+        payload["ipv6_cidr_count"] = len(stats.get("ipv6_cidrs", set()))
+        payload["ipv4_address_count"] = ipv4_union_size(stats.get("ipv4_cidrs", set()))
+        payload["updated_at"] = manifest.source_published_at or max(stats.get("updated_values", [snapshot.snapshot_date]))
         feeds.append(payload)
 
     return {
         "snapshot_date": snapshot.snapshot_date,
         "record_count": len(snapshot.records),
         "cidr_count": len(collections["all"]),
+        "ipv4_cidr_count": sum(1 for cidr in overall_cidrs if ip_network(cidr, strict=False).version == 4),
+        "ipv6_cidr_count": sum(1 for cidr in overall_cidrs if ip_network(cidr, strict=False).version == 6),
+        "ipv4_address_count": ipv4_union_size({cidr for cidr in overall_cidrs if ip_network(cidr, strict=False).version == 4}),
         "vendor_count": len({record.vendor for record in snapshot.records}),
         "feed_count": len(snapshot.manifests),
         "stale_feed_count": sum(1 for manifest in snapshot.manifests if manifest.stale),

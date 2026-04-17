@@ -3,6 +3,7 @@
   "feed_count": 6,
   "feeds": [
     {
+      "dataset": "atlassian",
       "details": {
         "creationDate": "2026-04-07T02:01:27.152558",
         "md5": null,
@@ -11,30 +12,40 @@
       },
       "feed": "atlassian-ip-ranges",
       "fetch_status": "success",
+      "ipv4_address_count": 75663,
+      "ipv4_cidr_count": 257,
+      "ipv6_cidr_count": 116,
       "record_count": 612,
       "source_published_at": "2026-04-07T02:01:27.152558",
       "source_version": "1775527287",
       "stale": false,
       "unique_cidr_count": 373,
+      "updated_at": "2026-04-07T02:01:27.152558",
       "upstream_url": "https://ip-ranges.atlassian.com/",
       "vendor": "atlassian"
     },
     {
+      "dataset": "aws",
       "details": {
         "createDate": "2026-04-17-18-27-05",
         "syncToken": "1776450425"
       },
       "feed": "aws-ip-ranges",
       "fetch_status": "success",
+      "ipv4_address_count": 101528654,
+      "ipv4_cidr_count": 7538,
+      "ipv6_cidr_count": 2707,
       "record_count": 15498,
       "source_published_at": "2026-04-17-18-27-05",
       "source_version": "1776450425",
       "stale": false,
       "unique_cidr_count": 10245,
+      "updated_at": "2026-04-17-18-27-05",
       "upstream_url": "https://ip-ranges.amazonaws.com/ip-ranges.json",
       "vendor": "aws"
     },
     {
+      "dataset": "github",
       "details": {
         "domains": {
           "actions": [
@@ -272,58 +283,80 @@
       },
       "feed": "github-meta",
       "fetch_status": "success",
+      "ipv4_address_count": 26920412,
+      "ipv4_cidr_count": 5283,
+      "ipv6_cidr_count": 1252,
       "record_count": 6589,
       "source_version": "sha256:617eb43da216dd03034baff76775c6739bf4cd8f89027737ce11055a815211ba",
       "stale": false,
       "unique_cidr_count": 6535,
+      "updated_at": "2026-04-17T20:23:47Z",
       "upstream_url": "https://api.github.com/meta",
       "vendor": "github"
     },
     {
+      "dataset": "google-cloud",
       "details": {
         "creationTime": "2026-04-17T13:16:23.22253",
         "syncToken": "1776456983222"
       },
       "feed": "google-cloud",
       "fetch_status": "success",
+      "ipv4_address_count": 16600192,
+      "ipv4_cidr_count": 862,
+      "ipv6_cidr_count": 48,
       "record_count": 910,
       "source_published_at": "2026-04-17T13:16:23.22253",
       "source_version": "1776456983222",
       "stale": false,
       "unique_cidr_count": 910,
+      "updated_at": "2026-04-17T13:16:23.22253",
       "upstream_url": "https://www.gstatic.com/ipranges/cloud.json",
       "vendor": "google"
     },
     {
+      "dataset": "google-goog",
       "details": {
         "creationTime": "2026-04-17T13:16:23.22253",
         "syncToken": "1776456983222"
       },
       "feed": "google-goog",
       "fetch_status": "success",
+      "ipv4_address_count": 22112000,
+      "ipv4_cidr_count": 96,
+      "ipv6_cidr_count": 15,
       "record_count": 111,
       "source_published_at": "2026-04-17T13:16:23.22253",
       "source_version": "1776456983222",
       "stale": false,
       "unique_cidr_count": 111,
+      "updated_at": "2026-04-17T13:16:23.22253",
       "upstream_url": "https://www.gstatic.com/ipranges/goog.json",
       "vendor": "google"
     },
     {
+      "dataset": "m365-worldwide",
       "details": {
         "latest": "2026033100"
       },
       "feed": "m365-endpoints",
       "fetch_status": "success",
       "instance": "Worldwide",
+      "ipv4_address_count": 2514957,
+      "ipv4_cidr_count": 34,
+      "ipv6_cidr_count": 59,
       "record_count": 129,
       "source_version": "2026033100",
       "stale": false,
       "unique_cidr_count": 93,
+      "updated_at": "2026-04-17T20:23:47Z",
       "upstream_url": "https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=2331b645-45d0-42fc-8d84-b83cc2f1ef2b",
       "vendor": "m365"
     }
   ],
+  "ipv4_address_count": 152833311,
+  "ipv4_cidr_count": 14065,
+  "ipv6_cidr_count": 4197,
   "record_count": 23849,
   "snapshot_date": "2026-04-17",
   "stale_feed_count": 0,
