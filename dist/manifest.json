@@ -20,7 +20,7 @@
       "source_version": "1775527287",
       "stale": false,
       "unique_cidr_count": 373,
-      "updated_at": "2026-04-07T02:01:27.152558",
+      "updated_at": "2026-04-07",
       "upstream_url": "https://ip-ranges.atlassian.com/",
       "vendor": "atlassian"
     },
@@ -40,7 +40,7 @@
       "source_version": "1776450425",
       "stale": false,
       "unique_cidr_count": 10245,
-      "updated_at": "2026-04-17-18-27-05",
+      "updated_at": "2026-04-17",
       "upstream_url": "https://ip-ranges.amazonaws.com/ip-ranges.json",
       "vendor": "aws"
     },
@@ -290,7 +290,7 @@
       "source_version": "sha256:617eb43da216dd03034baff76775c6739bf4cd8f89027737ce11055a815211ba",
       "stale": false,
       "unique_cidr_count": 6535,
-      "updated_at": "2026-04-17T20:23:47Z",
+      "updated_at": "2026-04-17",
       "upstream_url": "https://api.github.com/meta",
       "vendor": "github"
     },
@@ -310,7 +310,7 @@
       "source_version": "1776456983222",
       "stale": false,
       "unique_cidr_count": 910,
-      "updated_at": "2026-04-17T13:16:23.22253",
+      "updated_at": "2026-04-17",
       "upstream_url": "https://www.gstatic.com/ipranges/cloud.json",
       "vendor": "google"
     },
@@ -330,7 +330,7 @@
       "source_version": "1776456983222",
       "stale": false,
       "unique_cidr_count": 111,
-      "updated_at": "2026-04-17T13:16:23.22253",
+      "updated_at": "2026-04-17",
       "upstream_url": "https://www.gstatic.com/ipranges/goog.json",
       "vendor": "google"
     },
@@ -349,7 +349,7 @@
       "source_version": "2026033100",
       "stale": false,
       "unique_cidr_count": 93,
-      "updated_at": "2026-04-17T20:23:47Z",
+      "updated_at": "2026-04-17",
       "upstream_url": "https://endpoints.office.com/endpoints/Worldwide?ClientRequestId=2331b645-45d0-42fc-8d84-b83cc2f1ef2b",
       "vendor": "m365"
     }

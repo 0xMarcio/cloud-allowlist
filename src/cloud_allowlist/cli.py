@@ -5,6 +5,7 @@ from datetime import date, timedelta
 from ipaddress import ip_network
 from pathlib import Path
 from typing import Any
+import re
 import sys
 import uuid
 
@@ -183,6 +184,14 @@ def _build_manifest_payload(snapshot: Snapshot) -> dict[str, Any]:
     per_feed_stats: dict[str, dict[str, Any]] = {}
     overall_cidrs = {record.cidr for record in snapshot.records}
 
+    def normalize_day(value: str | None) -> str:
+        if not value:
+            return snapshot.snapshot_date
+        match = re.search(r"\d{4}-\d{2}-\d{2}", value)
+        if match:
+            return match.group(0)
+        return snapshot.snapshot_date
+
     def ipv4_union_size(cidrs: set[str]) -> int:
         ranges = sorted(
             (
@@ -231,7 +240,9 @@ def _build_manifest_payload(snapshot: Snapshot) -> dict[str, Any]:
         payload["ipv4_cidr_count"] = len(stats.get("ipv4_cidrs", set()))
         payload["ipv6_cidr_count"] = len(stats.get("ipv6_cidrs", set()))
         payload["ipv4_address_count"] = ipv4_union_size(stats.get("ipv4_cidrs", set()))
-        payload["updated_at"] = manifest.source_published_at or max(stats.get("updated_values", [snapshot.snapshot_date]))
+        payload["updated_at"] = normalize_day(
+            manifest.source_published_at or max(stats.get("updated_values", [snapshot.snapshot_date]))
+        )
         feeds.append(payload)
 
     return {
