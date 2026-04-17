@@ -5,6 +5,11 @@ from typing import Any
 
 from cloud_allowlist.io_utils import atomic_write_text
 
+
+def _fmt(value: int) -> str:
+    return f"{value:,}"
+
+
 def _table(headers: list[str], rows: list[list[str]]) -> str:
     lines = [
         "| " + " | ".join(headers) + " |",
@@ -18,11 +23,11 @@ def _table(headers: list[str], rows: list[list[str]]) -> str:
 def emit_readme(root: Path, manifest_payload: dict[str, Any]) -> None:
     snapshot_rows = [
         ["snapshot_date", f"`{manifest_payload['snapshot_date']}`"],
-        ["record_count", str(manifest_payload["record_count"])],
-        ["cidrs", str(manifest_payload["cidr_count"])],
-        ["ipv4_cidrs", str(manifest_payload["ipv4_cidr_count"])],
-        ["ipv6_cidrs", str(manifest_payload["ipv6_cidr_count"])],
-        ["ipv4_addrs", str(manifest_payload["ipv4_address_count"])],
+        ["cidrs", _fmt(manifest_payload["cidr_count"])],
+        ["ipv4_cidrs", _fmt(manifest_payload["ipv4_cidr_count"])],
+        ["ipv6_cidrs", _fmt(manifest_payload["ipv6_cidr_count"])],
+        ["ipv4_addrs", _fmt(manifest_payload["ipv4_address_count"])],
+        ["ipv6_addrs", _fmt(manifest_payload["ipv6_address_count"])],
     ]
 
     feed_rows: list[list[str]] = []
@@ -36,11 +41,11 @@ def emit_readme(root: Path, manifest_payload: dict[str, Any]) -> None:
         feed_rows.append(
             [
                 f"`{dataset}`",
-                str(feed["record_count"]),
-                str(feed["unique_cidr_count"]),
-                str(feed["ipv4_cidr_count"]),
-                str(feed["ipv6_cidr_count"]),
-                str(feed["ipv4_address_count"]),
+                _fmt(feed["unique_cidr_count"]),
+                _fmt(feed["ipv4_cidr_count"]),
+                _fmt(feed["ipv6_cidr_count"]),
+                _fmt(feed["ipv4_address_count"]),
+                _fmt(feed["ipv6_address_count"]),
                 f"`{feed['updated_at']}`",
                 f"{json_link} {txt_link} {pa_link} {pf_link} {src_link}",
             ]
@@ -49,17 +54,17 @@ def emit_readme(root: Path, manifest_payload: dict[str, Any]) -> None:
     output_rows = [
         [
             "`all`",
-            str(manifest_payload["cidr_count"]),
+            _fmt(manifest_payload["cidr_count"]),
             f"[json](dist/json/all.json) [csv](dist/csv/all.csv) [txt](dist/txt/all.txt)",
         ],
         [
             "`all-ipv4`",
-            str(manifest_payload["ipv4_cidr_count"]),
+            _fmt(manifest_payload["ipv4_cidr_count"]),
             f"[txt](dist/txt/all-ipv4.txt) [pa](dist/paloalto/ip/all-ipv4.txt) [pf](dist/pfsense/urltable/all-ipv4.txt)",
         ],
         [
             "`all-ipv6`",
-            str(manifest_payload["ipv6_cidr_count"]),
+            _fmt(manifest_payload["ipv6_cidr_count"]),
             f"[txt](dist/txt/all-ipv6.txt) [pa](dist/paloalto/ip/all-ipv6.txt) [pf](dist/pfsense/urltable/all-ipv6.txt)",
         ],
         [
@@ -76,7 +81,7 @@ def emit_readme(root: Path, manifest_payload: dict[str, Any]) -> None:
             _table(["field", "value"], snapshot_rows),
             "## Feeds",
             _table(
-                ["dataset", "records", "cidrs", "v4", "v6", "ipv4_addrs", "updated", "links"],
+                ["dataset", "cidrs", "v4", "v6", "ipv4_addrs", "ipv6_addrs", "updated", "links"],
                 feed_rows,
             ),
             "## Outputs",

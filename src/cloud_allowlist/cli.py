@@ -192,14 +192,14 @@ def _build_manifest_payload(snapshot: Snapshot) -> dict[str, Any]:
             return match.group(0)
         return snapshot.snapshot_date
 
-    def ipv4_union_size(cidrs: set[str]) -> int:
+    def union_size(cidrs: set[str], *, version: int) -> int:
         ranges = sorted(
             (
                 int(network.network_address),
                 int(network.broadcast_address),
             )
             for network in (ip_network(cidr, strict=False) for cidr in cidrs)
-            if network.version == 4
+            if network.version == version
         )
         if not ranges:
             return 0
@@ -239,7 +239,8 @@ def _build_manifest_payload(snapshot: Snapshot) -> dict[str, Any]:
         payload["unique_cidr_count"] = len(cidrs)
         payload["ipv4_cidr_count"] = len(stats.get("ipv4_cidrs", set()))
         payload["ipv6_cidr_count"] = len(stats.get("ipv6_cidrs", set()))
-        payload["ipv4_address_count"] = ipv4_union_size(stats.get("ipv4_cidrs", set()))
+        payload["ipv4_address_count"] = union_size(stats.get("ipv4_cidrs", set()), version=4)
+        payload["ipv6_address_count"] = union_size(stats.get("ipv6_cidrs", set()), version=6)
         payload["updated_at"] = normalize_day(
             manifest.source_published_at or max(stats.get("updated_values", [snapshot.snapshot_date]))
         )
@@ -251,7 +252,14 @@ def _build_manifest_payload(snapshot: Snapshot) -> dict[str, Any]:
         "cidr_count": len(collections["all"]),
         "ipv4_cidr_count": sum(1 for cidr in overall_cidrs if ip_network(cidr, strict=False).version == 4),
         "ipv6_cidr_count": sum(1 for cidr in overall_cidrs if ip_network(cidr, strict=False).version == 6),
-        "ipv4_address_count": ipv4_union_size({cidr for cidr in overall_cidrs if ip_network(cidr, strict=False).version == 4}),
+        "ipv4_address_count": union_size(
+            {cidr for cidr in overall_cidrs if ip_network(cidr, strict=False).version == 4},
+            version=4,
+        ),
+        "ipv6_address_count": union_size(
+            {cidr for cidr in overall_cidrs if ip_network(cidr, strict=False).version == 6},
+            version=6,
+        ),
         "vendor_count": len({record.vendor for record in snapshot.records}),
         "feed_count": len(snapshot.manifests),
         "stale_feed_count": sum(1 for manifest in snapshot.manifests if manifest.stale),

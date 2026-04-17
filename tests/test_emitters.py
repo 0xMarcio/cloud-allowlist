@@ -74,11 +74,11 @@ def test_emitters_write_expected_files(tmp_path: Path) -> None:
                 "vendor": "aws",
                 "feed": "aws-ip-ranges",
                 "upstream_url": "fixture://aws",
-                "record_count": 1,
                 "unique_cidr_count": 1,
                 "ipv4_cidr_count": 1,
                 "ipv6_cidr_count": 0,
                 "ipv4_address_count": 1024,
+                "ipv6_address_count": 0,
                 "updated_at": "2026-04-17T00:00:00Z",
             }
         ],
@@ -87,6 +87,7 @@ def test_emitters_write_expected_files(tmp_path: Path) -> None:
         "ipv4_cidr_count": 2,
         "ipv6_cidr_count": 1,
         "ipv4_address_count": 5121,
+        "ipv6_address_count": 302231454903657293676544,
         "feed_count": 3,
         "stale_feed_count": 0,
     }
@@ -106,7 +107,7 @@ def test_emitters_write_expected_files(tmp_path: Path) -> None:
     assert (tmp_path / "paloalto" / "ip" / "all.txt").exists()
     assert (tmp_path / "pfsense" / "urltable" / "all.txt").exists()
     readme = (tmp_path / "README.md").read_text(encoding="utf-8")
-    assert "| dataset | records | cidrs | v4 | v6 | ipv4_addrs | updated | links |" in readme
+    assert "| dataset | cidrs | v4 | v6 | ipv4_addrs | ipv6_addrs | updated | links |" in readme
     assert "[json](dist/json/vendors/aws.json)" in readme
     tfvars = json.loads((tmp_path / "terraform" / "cloud_allowlist.auto.tfvars.json").read_text(encoding="utf-8"))
     assert "cloud_allowlist" in tfvars
