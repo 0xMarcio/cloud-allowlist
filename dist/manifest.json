@@ -11,7 +11,7 @@
         "url": null
       },
       "feed": "atlassian-ip-ranges",
-      "fetch_status": "success",
+      "fetch_status": "cached",
       "ipv4_address_count": 75663,
       "ipv4_cidr_count": 257,
       "ipv6_address_count": 4951760526076402573787529218,
@@ -32,7 +32,7 @@
         "syncToken": "1776450425"
       },
       "feed": "aws-ip-ranges",
-      "fetch_status": "success",
+      "fetch_status": "cached",
       "ipv4_address_count": 101528654,
       "ipv4_cidr_count": 7538,
       "ipv6_address_count": 1578785777412639701612351193101,
@@ -284,7 +284,7 @@
         }
       },
       "feed": "github-meta",
-      "fetch_status": "success",
+      "fetch_status": "cached",
       "ipv4_address_count": 26920412,
       "ipv4_cidr_count": 5283,
       "ipv6_address_count": 713292394505268875004521480192,
@@ -300,8 +300,8 @@
     {
       "dataset": "google-cloud",
       "details": {
-        "creationTime": "2026-04-17T13:16:23.22253",
-        "syncToken": "1776456983222"
+        "creationTime": "2026-04-17T19:04:33.022222",
+        "syncToken": "1776477873022"
       },
       "feed": "google-cloud",
       "fetch_status": "success",
@@ -310,8 +310,8 @@
       "ipv6_address_count": 910321142169815768553750528,
       "ipv6_cidr_count": 48,
       "record_count": 910,
-      "source_published_at": "2026-04-17T13:16:23.22253",
-      "source_version": "1776456983222",
+      "source_published_at": "2026-04-17T19:04:33.022222",
+      "source_version": "1776477873022",
       "stale": false,
       "unique_cidr_count": 910,
       "updated_at": "2026-04-17",
@@ -321,8 +321,8 @@
     {
       "dataset": "google-goog",
       "details": {
-        "creationTime": "2026-04-17T13:16:23.22253",
-        "syncToken": "1776456983222"
+        "creationTime": "2026-04-17T19:04:33.022222",
+        "syncToken": "1776477873022"
       },
       "feed": "google-goog",
       "fetch_status": "success",
@@ -331,8 +331,8 @@
       "ipv6_address_count": 2060860680695484717817669877760,
       "ipv6_cidr_count": 15,
       "record_count": 111,
-      "source_published_at": "2026-04-17T13:16:23.22253",
-      "source_version": "1776456983222",
+      "source_published_at": "2026-04-17T19:04:33.022222",
+      "source_version": "1776477873022",
       "stale": false,
       "unique_cidr_count": 111,
       "updated_at": "2026-04-17",
@@ -345,7 +345,7 @@
         "latest": "2026033100"
       },
       "feed": "m365-endpoints",
-      "fetch_status": "success",
+      "fetch_status": "cached",
       "instance": "Worldwide",
       "ipv4_address_count": 2514957,
       "ipv4_cidr_count": 34,
@@ -365,7 +365,7 @@
   "ipv6_address_count": 4397607995573118828935446003741,
   "ipv6_cidr_count": 4197,
   "record_count": 23849,
-  "snapshot_date": "2026-04-17",
+  "snapshot_date": "2026-04-18",
   "stale_feed_count": 0,
   "vendor_count": 5
 }

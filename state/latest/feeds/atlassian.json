@@ -8,7 +8,7 @@
       "url": null
     },
     "feed": "atlassian-ip-ranges",
-    "fetch_status": "success",
+    "fetch_status": "cached",
     "record_count": 612,
     "source_published_at": "2026-04-07T02:01:27.152558",
     "source_version": "1775527287",
@@ -27294,5 +27294,5 @@
       "vendor": "atlassian"
     }
   ],
-  "snapshot_date": "2026-04-17"
+  "snapshot_date": "2026-04-18"
 }
