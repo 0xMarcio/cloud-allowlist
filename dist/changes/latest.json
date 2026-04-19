@@ -1,6 +1,6 @@
 {
   "details": {},
-  "from_date": "2026-04-17",
+  "from_date": "2026-04-18",
   "has_prior_baseline": true,
   "message": "No changes detected.",
   "stale_feeds": [],
@@ -54,5 +54,5 @@
       "vendor": "m365"
     }
   ],
-  "to_date": "2026-04-18"
+  "to_date": "2026-04-19"
 }
