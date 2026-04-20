@@ -1,8 +1,45 @@
 {
-  "details": {},
-  "from_date": "2026-04-18",
+  "details": {
+    "aws/aws-ip-ranges": {
+      "added": [
+        {
+          "cidr": "2605:b140:9801::/48",
+          "metadata": {
+            "cidr": "2605:b140:9801::/48",
+            "extra": {},
+            "family": 6,
+            "feed": "aws-ip-ranges",
+            "network_border_group": "us-west-2",
+            "record_id": "aws:6:2605:b140:9801::/48:AMAZON:us-west-2:us-west-2",
+            "region": "us-west-2",
+            "service": "AMAZON",
+            "vendor": "aws"
+          },
+          "record_id": "aws:6:2605:b140:9801::/48:AMAZON:us-west-2:us-west-2"
+        },
+        {
+          "cidr": "2605:b140:9801::/48",
+          "metadata": {
+            "cidr": "2605:b140:9801::/48",
+            "extra": {},
+            "family": 6,
+            "feed": "aws-ip-ranges",
+            "network_border_group": "us-west-2",
+            "record_id": "aws:6:2605:b140:9801::/48:EC2:us-west-2:us-west-2",
+            "region": "us-west-2",
+            "service": "EC2",
+            "vendor": "aws"
+          },
+          "record_id": "aws:6:2605:b140:9801::/48:EC2:us-west-2:us-west-2"
+        }
+      ],
+      "metadata_changed": [],
+      "removed": []
+    }
+  },
+  "from_date": "2026-04-19",
   "has_prior_baseline": true,
-  "message": "No changes detected.",
+  "message": null,
   "stale_feeds": [],
   "summary": [
     {
@@ -14,7 +51,7 @@
       "vendor": "atlassian"
     },
     {
-      "added": 0,
+      "added": 2,
       "feed": "aws-ip-ranges",
       "instance": null,
       "metadata_changed": 0,
@@ -54,5 +91,5 @@
       "vendor": "m365"
     }
   ],
-  "to_date": "2026-04-19"
+  "to_date": "2026-04-20"
 }
