@@ -1,0 +1,201 @@
+{
+  "details": {
+    "aws/aws-ip-ranges": {
+      "added": [
+        {
+          "cidr": "1.178.172.0/23",
+          "metadata": {
+            "cidr": "1.178.172.0/23",
+            "extra": {},
+            "family": 4,
+            "feed": "aws-ip-ranges",
+            "network_border_group": "GLOBAL",
+            "record_id": "aws:4:1.178.172.0/23:EC2:GLOBAL:GLOBAL",
+            "region": "GLOBAL",
+            "service": "EC2",
+            "vendor": "aws"
+          },
+          "record_id": "aws:4:1.178.172.0/23:EC2:GLOBAL:GLOBAL"
+        },
+        {
+          "cidr": "3.2.100.0/24",
+          "metadata": {
+            "cidr": "3.2.100.0/24",
+            "extra": {},
+            "family": 4,
+            "feed": "aws-ip-ranges",
+            "network_border_group": "us-gov-east-1",
+            "record_id": "aws:4:3.2.100.0/24:S3:us-gov-east-1:us-gov-east-1",
+            "region": "us-gov-east-1",
+            "service": "S3",
+            "vendor": "aws"
+          },
+          "record_id": "aws:4:3.2.100.0/24:S3:us-gov-east-1:us-gov-east-1"
+        },
+        {
+          "cidr": "3.2.99.0/24",
+          "metadata": {
+            "cidr": "3.2.99.0/24",
+            "extra": {},
+            "family": 4,
+            "feed": "aws-ip-ranges",
+            "network_border_group": "us-gov-west-1",
+            "record_id": "aws:4:3.2.99.0/24:S3:us-gov-west-1:us-gov-west-1",
+            "region": "us-gov-west-1",
+            "service": "S3",
+            "vendor": "aws"
+          },
+          "record_id": "aws:4:3.2.99.0/24:S3:us-gov-west-1:us-gov-west-1"
+        },
+        {
+          "cidr": "32.184.0.0/13",
+          "metadata": {
+            "cidr": "32.184.0.0/13",
+            "extra": {},
+            "family": 4,
+            "feed": "aws-ip-ranges",
+            "network_border_group": "us-west-2",
+            "record_id": "aws:4:32.184.0.0/13:EC2:us-west-2:us-west-2",
+            "region": "us-west-2",
+            "service": "EC2",
+            "vendor": "aws"
+          },
+          "record_id": "aws:4:32.184.0.0/13:EC2:us-west-2:us-west-2"
+        },
+        {
+          "cidr": "2600:f0f0:6123::/48",
+          "metadata": {
+            "cidr": "2600:f0f0:6123::/48",
+            "extra": {},
+            "family": 6,
+            "feed": "aws-ip-ranges",
+            "network_border_group": "us-gov-west-1",
+            "record_id": "aws:6:2600:f0f0:6123::/48:S3:us-gov-west-1:us-gov-west-1",
+            "region": "us-gov-west-1",
+            "service": "S3",
+            "vendor": "aws"
+          },
+          "record_id": "aws:6:2600:f0f0:6123::/48:S3:us-gov-west-1:us-gov-west-1"
+        },
+        {
+          "cidr": "2600:f0f0:6124::/48",
+          "metadata": {
+            "cidr": "2600:f0f0:6124::/48",
+            "extra": {},
+            "family": 6,
+            "feed": "aws-ip-ranges",
+            "network_border_group": "us-gov-east-1",
+            "record_id": "aws:6:2600:f0f0:6124::/48:S3:us-gov-east-1:us-gov-east-1",
+            "region": "us-gov-east-1",
+            "service": "S3",
+            "vendor": "aws"
+          },
+          "record_id": "aws:6:2600:f0f0:6124::/48:S3:us-gov-east-1:us-gov-east-1"
+        },
+        {
+          "cidr": "2600:f0f1:90::/44",
+          "metadata": {
+            "cidr": "2600:f0f1:90::/44",
+            "extra": {},
+            "family": 6,
+            "feed": "aws-ip-ranges",
+            "network_border_group": "GLOBAL",
+            "record_id": "aws:6:2600:f0f1:90::/44:AMAZON:GLOBAL:GLOBAL",
+            "region": "GLOBAL",
+            "service": "AMAZON",
+            "vendor": "aws"
+          },
+          "record_id": "aws:6:2600:f0f1:90::/44:AMAZON:GLOBAL:GLOBAL"
+        },
+        {
+          "cidr": "2600:f0f1:90::/44",
+          "metadata": {
+            "cidr": "2600:f0f1:90::/44",
+            "extra": {},
+            "family": 6,
+            "feed": "aws-ip-ranges",
+            "network_border_group": "GLOBAL",
+            "record_id": "aws:6:2600:f0f1:90::/44:EC2:GLOBAL:GLOBAL",
+            "region": "GLOBAL",
+            "service": "EC2",
+            "vendor": "aws"
+          },
+          "record_id": "aws:6:2600:f0f1:90::/44:EC2:GLOBAL:GLOBAL"
+        }
+      ],
+      "metadata_changed": [],
+      "removed": [
+        {
+          "cidr": "1.178.172.0/23",
+          "metadata": {
+            "cidr": "1.178.172.0/23",
+            "extra": {},
+            "family": 4,
+            "feed": "aws-ip-ranges",
+            "network_border_group": "GLOBAL",
+            "record_id": "aws:4:1.178.172.0/23:GLOBALACCELERATOR:GLOBAL:GLOBAL",
+            "region": "GLOBAL",
+            "service": "GLOBALACCELERATOR",
+            "vendor": "aws"
+          },
+          "record_id": "aws:4:1.178.172.0/23:GLOBALACCELERATOR:GLOBAL:GLOBAL"
+        }
+      ]
+    }
+  },
+  "from_date": "2026-04-20",
+  "has_prior_baseline": true,
+  "message": null,
+  "stale_feeds": [],
+  "summary": [
+    {
+      "added": 0,
+      "feed": "atlassian-ip-ranges",
+      "instance": null,
+      "metadata_changed": 0,
+      "removed": 0,
+      "vendor": "atlassian"
+    },
+    {
+      "added": 8,
+      "feed": "aws-ip-ranges",
+      "instance": null,
+      "metadata_changed": 0,
+      "removed": 1,
+      "vendor": "aws"
+    },
+    {
+      "added": 0,
+      "feed": "github-meta",
+      "instance": null,
+      "metadata_changed": 0,
+      "removed": 0,
+      "vendor": "github"
+    },
+    {
+      "added": 0,
+      "feed": "google-cloud",
+      "instance": null,
+      "metadata_changed": 0,
+      "removed": 0,
+      "vendor": "google"
+    },
+    {
+      "added": 0,
+      "feed": "google-goog",
+      "instance": null,
+      "metadata_changed": 0,
+      "removed": 0,
+      "vendor": "google"
+    },
+    {
+      "added": 0,
+      "feed": "m365-endpoints",
+      "instance": "Worldwide",
+      "metadata_changed": 0,
+      "removed": 0,
+      "vendor": "m365"
+    }
+  ],
+  "to_date": "2026-04-21"
+}
