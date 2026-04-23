@@ -1,5 +1,5 @@
 {
-  "cidr_count": 18264,
+  "cidr_count": 18274,
   "feed_count": 6,
   "feeds": [
     {
@@ -28,21 +28,21 @@
     {
       "dataset": "aws",
       "details": {
-        "createDate": "2026-04-21-00-57-05",
-        "syncToken": "1776733025"
+        "createDate": "2026-04-22-23-07-04",
+        "syncToken": "1776899224"
       },
       "feed": "aws-ip-ranges",
-      "fetch_status": "cached",
-      "ipv4_address_count": 101528654,
-      "ipv4_cidr_count": 7538,
-      "ipv6_address_count": 1578806329151573150308321198093,
-      "ipv6_cidr_count": 2709,
-      "record_count": 15507,
-      "source_published_at": "2026-04-21-00-57-05",
-      "source_version": "1776733025",
+      "fetch_status": "success",
+      "ipv4_address_count": 101530734,
+      "ipv4_cidr_count": 7546,
+      "ipv6_address_count": 1579408374209741235637324873741,
+      "ipv6_cidr_count": 2711,
+      "record_count": 15520,
+      "source_published_at": "2026-04-22-23-07-04",
+      "source_version": "1776899224",
       "stale": false,
-      "unique_cidr_count": 10247,
-      "updated_at": "2026-04-21",
+      "unique_cidr_count": 10257,
+      "updated_at": "2026-04-22",
       "upstream_url": "https://ip-ranges.amazonaws.com/ip-ranges.json",
       "vendor": "aws"
     },
@@ -300,8 +300,8 @@
     {
       "dataset": "google-cloud",
       "details": {
-        "creationTime": "2026-04-21T19:07:19.996383",
-        "syncToken": "1776823639996"
+        "creationTime": "2026-04-22T19:04:13.189424",
+        "syncToken": "1776909853189"
       },
       "feed": "google-cloud",
       "fetch_status": "success",
@@ -310,19 +310,19 @@
       "ipv6_address_count": 910321142169815768553750528,
       "ipv6_cidr_count": 48,
       "record_count": 910,
-      "source_published_at": "2026-04-21T19:07:19.996383",
-      "source_version": "1776823639996",
+      "source_published_at": "2026-04-22T19:04:13.189424",
+      "source_version": "1776909853189",
       "stale": false,
       "unique_cidr_count": 910,
-      "updated_at": "2026-04-21",
+      "updated_at": "2026-04-22",
       "upstream_url": "https://www.gstatic.com/ipranges/cloud.json",
       "vendor": "google"
     },
     {
       "dataset": "google-goog",
       "details": {
-        "creationTime": "2026-04-21T19:07:19.996383",
-        "syncToken": "1776823639996"
+        "creationTime": "2026-04-22T19:04:13.189424",
+        "syncToken": "1776909853189"
       },
       "feed": "google-goog",
       "fetch_status": "success",
@@ -331,11 +331,11 @@
       "ipv6_address_count": 2060860680695484717817669877760,
       "ipv6_cidr_count": 15,
       "record_count": 111,
-      "source_published_at": "2026-04-21T19:07:19.996383",
-      "source_version": "1776823639996",
+      "source_published_at": "2026-04-22T19:04:13.189424",
+      "source_version": "1776909853189",
       "stale": false,
       "unique_cidr_count": 111,
-      "updated_at": "2026-04-21",
+      "updated_at": "2026-04-22",
       "upstream_url": "https://www.gstatic.com/ipranges/goog.json",
       "vendor": "google"
     },
@@ -360,12 +360,12 @@
       "vendor": "m365"
     }
   ],
-  "ipv4_address_count": 152833311,
-  "ipv4_cidr_count": 14065,
-  "ipv6_address_count": 4397628547312052277631416008733,
-  "ipv6_cidr_count": 4199,
-  "record_count": 23858,
-  "snapshot_date": "2026-04-22",
+  "ipv4_address_count": 152835391,
+  "ipv4_cidr_count": 14073,
+  "ipv6_address_count": 4398230592370220362960419684381,
+  "ipv6_cidr_count": 4201,
+  "record_count": 23871,
+  "snapshot_date": "2026-04-23",
   "stale_feed_count": 0,
   "vendor_count": 5
 }
