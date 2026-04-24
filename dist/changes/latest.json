@@ -1,305 +1,730 @@
 {
   "details": {
-    "aws/aws-ip-ranges": {
+    "atlassian/atlassian-ip-ranges": {
       "added": [
         {
-          "cidr": "1.179.60.0/23",
+          "cidr": "104.192.138.224/28",
           "metadata": {
-            "cidr": "1.179.60.0/23",
-            "extra": {},
+            "category": "commercial",
+            "cidr": "104.192.138.224/28",
+            "direction": [
+              "egress"
+            ],
+            "extra": {
+              "cidr": "104.192.138.224/28",
+              "direction": [
+                "egress"
+              ],
+              "mask": "255.255.255.240",
+              "mask_len": 28,
+              "network": "104.192.138.224",
+              "perimeter": "commercial",
+              "product": [
+                "rovo-crawler"
+              ],
+              "region": [
+                "us-west-1"
+              ]
+            },
             "family": 4,
-            "feed": "aws-ip-ranges",
-            "network_border_group": "GLOBAL",
-            "record_id": "aws:4:1.179.60.0/23:EC2:GLOBAL:GLOBAL",
-            "region": "GLOBAL",
-            "service": "EC2",
-            "vendor": "aws"
+            "feed": "atlassian-ip-ranges",
+            "product": [
+              "rovo-crawler"
+            ],
+            "record_id": "atlassian:4af7fedce456:4:104.192.138.224/28",
+            "region": [
+              "us-west-1"
+            ],
+            "vendor": "atlassian"
           },
-          "record_id": "aws:4:1.179.60.0/23:EC2:GLOBAL:GLOBAL"
+          "record_id": "atlassian:4af7fedce456:4:104.192.138.224/28"
         },
         {
-          "cidr": "15.129.48.0/23",
+          "cidr": "104.192.138.224/32",
           "metadata": {
-            "cidr": "15.129.48.0/23",
-            "extra": {},
+            "category": "commercial",
+            "cidr": "104.192.138.224/32",
+            "direction": [
+              "egress"
+            ],
+            "extra": {
+              "cidr": "104.192.138.224/28",
+              "direction": [
+                "egress"
+              ],
+              "mask": "255.255.255.240",
+              "mask_len": 28,
+              "network": "104.192.138.224",
+              "perimeter": "commercial",
+              "product": [
+                "rovo-crawler"
+              ],
+              "region": [
+                "us-west-1"
+              ]
+            },
             "family": 4,
-            "feed": "aws-ip-ranges",
-            "network_border_group": "us-west-2",
-            "record_id": "aws:4:15.129.48.0/23:AMAZON:us-west-2:us-west-2",
-            "region": "us-west-2",
-            "service": "AMAZON",
-            "vendor": "aws"
+            "feed": "atlassian-ip-ranges",
+            "product": [
+              "rovo-crawler"
+            ],
+            "record_id": "atlassian:4af7fedce456:4:104.192.138.224/32",
+            "region": [
+              "us-west-1"
+            ],
+            "vendor": "atlassian"
           },
-          "record_id": "aws:4:15.129.48.0/23:AMAZON:us-west-2:us-west-2"
+          "record_id": "atlassian:4af7fedce456:4:104.192.138.224/32"
         },
         {
-          "cidr": "15.129.48.0/23",
+          "cidr": "255.255.255.240/32",
           "metadata": {
-            "cidr": "15.129.48.0/23",
-            "extra": {},
+            "category": "commercial",
+            "cidr": "255.255.255.240/32",
+            "direction": [
+              "egress"
+            ],
+            "extra": {
+              "cidr": "104.192.138.224/28",
+              "direction": [
+                "egress"
+              ],
+              "mask": "255.255.255.240",
+              "mask_len": 28,
+              "network": "104.192.138.224",
+              "perimeter": "commercial",
+              "product": [
+                "rovo-crawler"
+              ],
+              "region": [
+                "us-west-1"
+              ]
+            },
             "family": 4,
-            "feed": "aws-ip-ranges",
-            "network_border_group": "us-west-2",
-            "record_id": "aws:4:15.129.48.0/23:EC2:us-west-2:us-west-2",
-            "region": "us-west-2",
-            "service": "EC2",
-            "vendor": "aws"
+            "feed": "atlassian-ip-ranges",
+            "product": [
+              "rovo-crawler"
+            ],
+            "record_id": "atlassian:4af7fedce456:4:255.255.255.240/32",
+            "region": [
+              "us-west-1"
+            ],
+            "vendor": "atlassian"
           },
-          "record_id": "aws:4:15.129.48.0/23:EC2:us-west-2:us-west-2"
+          "record_id": "atlassian:4af7fedce456:4:255.255.255.240/32"
         },
         {
-          "cidr": "15.129.52.0/22",
+          "cidr": "104.192.138.0/24",
           "metadata": {
-            "cidr": "15.129.52.0/22",
-            "extra": {},
+            "category": "commercial",
+            "cidr": "104.192.138.0/24",
+            "direction": [
+              "ingress"
+            ],
+            "extra": {
+              "cidr": "104.192.138.0/24",
+              "direction": [
+                "ingress"
+              ],
+              "mask": "255.255.255.0",
+              "mask_len": 24,
+              "network": "104.192.138.0",
+              "perimeter": "commercial",
+              "product": [
+                "bitbucket",
+                "confluence",
+                "forge",
+                "halp",
+                "jira",
+                "loom",
+                "statuspage",
+                "trello"
+              ],
+              "region": [
+                "global"
+              ]
+            },
             "family": 4,
-            "feed": "aws-ip-ranges",
-            "network_border_group": "us-east-1",
-            "record_id": "aws:4:15.129.52.0/22:AMAZON:us-east-1:us-east-1",
-            "region": "us-east-1",
-            "service": "AMAZON",
-            "vendor": "aws"
+            "feed": "atlassian-ip-ranges",
+            "product": [
+              "bitbucket",
+              "confluence",
+              "forge",
+              "halp",
+              "jira",
+              "loom",
+              "statuspage",
+              "trello"
+            ],
+            "record_id": "atlassian:ad24b07ca8ee:4:104.192.138.0/24",
+            "region": [
+              "global"
+            ],
+            "vendor": "atlassian"
           },
-          "record_id": "aws:4:15.129.52.0/22:AMAZON:us-east-1:us-east-1"
+          "record_id": "atlassian:ad24b07ca8ee:4:104.192.138.0/24"
         },
         {
-          "cidr": "15.129.52.0/22",
+          "cidr": "104.192.138.0/32",
           "metadata": {
-            "cidr": "15.129.52.0/22",
-            "extra": {},
+            "category": "commercial",
+            "cidr": "104.192.138.0/32",
+            "direction": [
+              "ingress"
+            ],
+            "extra": {
+              "cidr": "104.192.138.0/24",
+              "direction": [
+                "ingress"
+              ],
+              "mask": "255.255.255.0",
+              "mask_len": 24,
+              "network": "104.192.138.0",
+              "perimeter": "commercial",
+              "product": [
+                "bitbucket",
+                "confluence",
+                "forge",
+                "halp",
+                "jira",
+                "loom",
+                "statuspage",
+                "trello"
+              ],
+              "region": [
+                "global"
+              ]
+            },
             "family": 4,
-            "feed": "aws-ip-ranges",
-            "network_border_group": "us-east-1",
-            "record_id": "aws:4:15.129.52.0/22:EC2:us-east-1:us-east-1",
-            "region": "us-east-1",
-            "service": "EC2",
-            "vendor": "aws"
+            "feed": "atlassian-ip-ranges",
+            "product": [
+              "bitbucket",
+              "confluence",
+              "forge",
+              "halp",
+              "jira",
+              "loom",
+              "statuspage",
+              "trello"
+            ],
+            "record_id": "atlassian:ad24b07ca8ee:4:104.192.138.0/32",
+            "region": [
+              "global"
+            ],
+            "vendor": "atlassian"
           },
-          "record_id": "aws:4:15.129.52.0/22:EC2:us-east-1:us-east-1"
+          "record_id": "atlassian:ad24b07ca8ee:4:104.192.138.0/32"
         },
         {
-          "cidr": "45.33.173.0/24",
+          "cidr": "255.255.255.0/32",
           "metadata": {
-            "cidr": "45.33.173.0/24",
-            "extra": {},
+            "category": "commercial",
+            "cidr": "255.255.255.0/32",
+            "direction": [
+              "ingress"
+            ],
+            "extra": {
+              "cidr": "104.192.138.0/24",
+              "direction": [
+                "ingress"
+              ],
+              "mask": "255.255.255.0",
+              "mask_len": 24,
+              "network": "104.192.138.0",
+              "perimeter": "commercial",
+              "product": [
+                "bitbucket",
+                "confluence",
+                "forge",
+                "halp",
+                "jira",
+                "loom",
+                "statuspage",
+                "trello"
+              ],
+              "region": [
+                "global"
+              ]
+            },
             "family": 4,
-            "feed": "aws-ip-ranges",
-            "network_border_group": "ap-southeast-3",
-            "record_id": "aws:4:45.33.173.0/24:AMAZON:ap-southeast-3:ap-southeast-3",
-            "region": "ap-southeast-3",
-            "service": "AMAZON",
-            "vendor": "aws"
+            "feed": "atlassian-ip-ranges",
+            "product": [
+              "bitbucket",
+              "confluence",
+              "forge",
+              "halp",
+              "jira",
+              "loom",
+              "statuspage",
+              "trello"
+            ],
+            "record_id": "atlassian:ad24b07ca8ee:4:255.255.255.0/32",
+            "region": [
+              "global"
+            ],
+            "vendor": "atlassian"
           },
-          "record_id": "aws:4:45.33.173.0/24:AMAZON:ap-southeast-3:ap-southeast-3"
+          "record_id": "atlassian:ad24b07ca8ee:4:255.255.255.0/32"
         },
         {
-          "cidr": "45.33.174.0/24",
+          "cidr": "104.192.141.0/24",
           "metadata": {
-            "cidr": "45.33.174.0/24",
-            "extra": {},
+            "category": "commercial",
+            "cidr": "104.192.141.0/24",
+            "direction": [
+              "ingress"
+            ],
+            "extra": {
+              "cidr": "104.192.141.0/24",
+              "direction": [
+                "ingress"
+              ],
+              "mask": "255.255.255.0",
+              "mask_len": 24,
+              "network": "104.192.141.0",
+              "perimeter": "commercial",
+              "product": [
+                "bitbucket",
+                "confluence",
+                "forge",
+                "halp",
+                "jira",
+                "loom",
+                "statuspage",
+                "trello"
+              ],
+              "region": [
+                "global"
+              ]
+            },
             "family": 4,
-            "feed": "aws-ip-ranges",
-            "network_border_group": "ap-south-1",
-            "record_id": "aws:4:45.33.174.0/24:AMAZON:ap-south-1:ap-south-1",
-            "region": "ap-south-1",
-            "service": "AMAZON",
-            "vendor": "aws"
+            "feed": "atlassian-ip-ranges",
+            "product": [
+              "bitbucket",
+              "confluence",
+              "forge",
+              "halp",
+              "jira",
+              "loom",
+              "statuspage",
+              "trello"
+            ],
+            "record_id": "atlassian:bcf4696bafa7:4:104.192.141.0/24",
+            "region": [
+              "global"
+            ],
+            "vendor": "atlassian"
           },
-          "record_id": "aws:4:45.33.174.0/24:AMAZON:ap-south-1:ap-south-1"
+          "record_id": "atlassian:bcf4696bafa7:4:104.192.141.0/24"
         },
         {
-          "cidr": "69.107.12.176/29",
+          "cidr": "104.192.141.0/32",
           "metadata": {
-            "cidr": "69.107.12.176/29",
-            "extra": {},
+            "category": "commercial",
+            "cidr": "104.192.141.0/32",
+            "direction": [
+              "ingress"
+            ],
+            "extra": {
+              "cidr": "104.192.141.0/24",
+              "direction": [
+                "ingress"
+              ],
+              "mask": "255.255.255.0",
+              "mask_len": 24,
+              "network": "104.192.141.0",
+              "perimeter": "commercial",
+              "product": [
+                "bitbucket",
+                "confluence",
+                "forge",
+                "halp",
+                "jira",
+                "loom",
+                "statuspage",
+                "trello"
+              ],
+              "region": [
+                "global"
+              ]
+            },
             "family": 4,
-            "feed": "aws-ip-ranges",
-            "network_border_group": "ap-southeast-3",
-            "record_id": "aws:4:69.107.12.176/29:AMAZON:ap-southeast-3:ap-southeast-3",
-            "region": "ap-southeast-3",
-            "service": "AMAZON",
-            "vendor": "aws"
+            "feed": "atlassian-ip-ranges",
+            "product": [
+              "bitbucket",
+              "confluence",
+              "forge",
+              "halp",
+              "jira",
+              "loom",
+              "statuspage",
+              "trello"
+            ],
+            "record_id": "atlassian:bcf4696bafa7:4:104.192.141.0/32",
+            "region": [
+              "global"
+            ],
+            "vendor": "atlassian"
           },
-          "record_id": "aws:4:69.107.12.176/29:AMAZON:ap-southeast-3:ap-southeast-3"
+          "record_id": "atlassian:bcf4696bafa7:4:104.192.141.0/32"
         },
         {
-          "cidr": "69.107.12.184/29",
+          "cidr": "255.255.255.0/32",
           "metadata": {
-            "cidr": "69.107.12.184/29",
-            "extra": {},
+            "category": "commercial",
+            "cidr": "255.255.255.0/32",
+            "direction": [
+              "ingress"
+            ],
+            "extra": {
+              "cidr": "104.192.141.0/24",
+              "direction": [
+                "ingress"
+              ],
+              "mask": "255.255.255.0",
+              "mask_len": 24,
+              "network": "104.192.141.0",
+              "perimeter": "commercial",
+              "product": [
+                "bitbucket",
+                "confluence",
+                "forge",
+                "halp",
+                "jira",
+                "loom",
+                "statuspage",
+                "trello"
+              ],
+              "region": [
+                "global"
+              ]
+            },
             "family": 4,
-            "feed": "aws-ip-ranges",
-            "network_border_group": "ap-southeast-3",
-            "record_id": "aws:4:69.107.12.184/29:AMAZON:ap-southeast-3:ap-southeast-3",
-            "region": "ap-southeast-3",
-            "service": "AMAZON",
-            "vendor": "aws"
+            "feed": "atlassian-ip-ranges",
+            "product": [
+              "bitbucket",
+              "confluence",
+              "forge",
+              "halp",
+              "jira",
+              "loom",
+              "statuspage",
+              "trello"
+            ],
+            "record_id": "atlassian:bcf4696bafa7:4:255.255.255.0/32",
+            "region": [
+              "global"
+            ],
+            "vendor": "atlassian"
           },
-          "record_id": "aws:4:69.107.12.184/29:AMAZON:ap-southeast-3:ap-southeast-3"
+          "record_id": "atlassian:bcf4696bafa7:4:255.255.255.0/32"
         },
         {
-          "cidr": "69.107.12.192/29",
+          "cidr": "104.192.139.0/24",
           "metadata": {
-            "cidr": "69.107.12.192/29",
-            "extra": {},
+            "category": "commercial",
+            "cidr": "104.192.139.0/24",
+            "direction": [
+              "ingress"
+            ],
+            "extra": {
+              "cidr": "104.192.139.0/24",
+              "direction": [
+                "ingress"
+              ],
+              "mask": "255.255.255.0",
+              "mask_len": 24,
+              "network": "104.192.139.0",
+              "perimeter": "commercial",
+              "product": [
+                "bitbucket",
+                "confluence",
+                "forge",
+                "halp",
+                "jira",
+                "loom",
+                "statuspage",
+                "trello"
+              ],
+              "region": [
+                "global"
+              ]
+            },
             "family": 4,
-            "feed": "aws-ip-ranges",
-            "network_border_group": "ap-south-1",
-            "record_id": "aws:4:69.107.12.192/29:AMAZON:ap-south-1:ap-south-1",
-            "region": "ap-south-1",
-            "service": "AMAZON",
-            "vendor": "aws"
+            "feed": "atlassian-ip-ranges",
+            "product": [
+              "bitbucket",
+              "confluence",
+              "forge",
+              "halp",
+              "jira",
+              "loom",
+              "statuspage",
+              "trello"
+            ],
+            "record_id": "atlassian:cd011e6f2bce:4:104.192.139.0/24",
+            "region": [
+              "global"
+            ],
+            "vendor": "atlassian"
           },
-          "record_id": "aws:4:69.107.12.192/29:AMAZON:ap-south-1:ap-south-1"
+          "record_id": "atlassian:cd011e6f2bce:4:104.192.139.0/24"
         },
         {
-          "cidr": "69.107.12.200/29",
+          "cidr": "104.192.139.0/32",
           "metadata": {
-            "cidr": "69.107.12.200/29",
-            "extra": {},
+            "category": "commercial",
+            "cidr": "104.192.139.0/32",
+            "direction": [
+              "ingress"
+            ],
+            "extra": {
+              "cidr": "104.192.139.0/24",
+              "direction": [
+                "ingress"
+              ],
+              "mask": "255.255.255.0",
+              "mask_len": 24,
+              "network": "104.192.139.0",
+              "perimeter": "commercial",
+              "product": [
+                "bitbucket",
+                "confluence",
+                "forge",
+                "halp",
+                "jira",
+                "loom",
+                "statuspage",
+                "trello"
+              ],
+              "region": [
+                "global"
+              ]
+            },
             "family": 4,
-            "feed": "aws-ip-ranges",
-            "network_border_group": "ap-south-1",
-            "record_id": "aws:4:69.107.12.200/29:AMAZON:ap-south-1:ap-south-1",
-            "region": "ap-south-1",
-            "service": "AMAZON",
-            "vendor": "aws"
+            "feed": "atlassian-ip-ranges",
+            "product": [
+              "bitbucket",
+              "confluence",
+              "forge",
+              "halp",
+              "jira",
+              "loom",
+              "statuspage",
+              "trello"
+            ],
+            "record_id": "atlassian:cd011e6f2bce:4:104.192.139.0/32",
+            "region": [
+              "global"
+            ],
+            "vendor": "atlassian"
           },
-          "record_id": "aws:4:69.107.12.200/29:AMAZON:ap-south-1:ap-south-1"
+          "record_id": "atlassian:cd011e6f2bce:4:104.192.139.0/32"
         },
         {
-          "cidr": "2600:1f01:4926::/47",
+          "cidr": "255.255.255.0/32",
           "metadata": {
-            "cidr": "2600:1f01:4926::/47",
-            "extra": {},
-            "family": 6,
-            "feed": "aws-ip-ranges",
-            "network_border_group": "ap-southeast-3",
-            "record_id": "aws:6:2600:1f01:4926::/47:AMAZON:ap-southeast-3:ap-southeast-3",
-            "region": "ap-southeast-3",
-            "service": "AMAZON",
-            "vendor": "aws"
+            "category": "commercial",
+            "cidr": "255.255.255.0/32",
+            "direction": [
+              "ingress"
+            ],
+            "extra": {
+              "cidr": "104.192.139.0/24",
+              "direction": [
+                "ingress"
+              ],
+              "mask": "255.255.255.0",
+              "mask_len": 24,
+              "network": "104.192.139.0",
+              "perimeter": "commercial",
+              "product": [
+                "bitbucket",
+                "confluence",
+                "forge",
+                "halp",
+                "jira",
+                "loom",
+                "statuspage",
+                "trello"
+              ],
+              "region": [
+                "global"
+              ]
+            },
+            "family": 4,
+            "feed": "atlassian-ip-ranges",
+            "product": [
+              "bitbucket",
+              "confluence",
+              "forge",
+              "halp",
+              "jira",
+              "loom",
+              "statuspage",
+              "trello"
+            ],
+            "record_id": "atlassian:cd011e6f2bce:4:255.255.255.0/32",
+            "region": [
+              "global"
+            ],
+            "vendor": "atlassian"
           },
-          "record_id": "aws:6:2600:1f01:4926::/47:AMAZON:ap-southeast-3:ap-southeast-3"
-        },
-        {
-          "cidr": "2600:1fe0:6000::/40",
-          "metadata": {
-            "cidr": "2600:1fe0:6000::/40",
-            "extra": {},
-            "family": 6,
-            "feed": "aws-ip-ranges",
-            "network_border_group": "us-east-2",
-            "record_id": "aws:6:2600:1fe0:6000::/40:AMAZON:us-east-2:us-east-2",
-            "region": "us-east-2",
-            "service": "AMAZON",
-            "vendor": "aws"
-          },
-          "record_id": "aws:6:2600:1fe0:6000::/40:AMAZON:us-east-2:us-east-2"
-        },
-        {
-          "cidr": "2600:1fe0:6000::/40",
-          "metadata": {
-            "cidr": "2600:1fe0:6000::/40",
-            "extra": {},
-            "family": 6,
-            "feed": "aws-ip-ranges",
-            "network_border_group": "us-east-2",
-            "record_id": "aws:6:2600:1fe0:6000::/40:EC2:us-east-2:us-east-2",
-            "region": "us-east-2",
-            "service": "EC2",
-            "vendor": "aws"
-          },
-          "record_id": "aws:6:2600:1fe0:6000::/40:EC2:us-east-2:us-east-2"
-        },
-        {
-          "cidr": "2600:1fe2:6000::/40",
-          "metadata": {
-            "cidr": "2600:1fe2:6000::/40",
-            "extra": {},
-            "family": 6,
-            "feed": "aws-ip-ranges",
-            "network_border_group": "us-east-2",
-            "record_id": "aws:6:2600:1fe2:6000::/40:AMAZON:us-east-2:us-east-2",
-            "region": "us-east-2",
-            "service": "AMAZON",
-            "vendor": "aws"
-          },
-          "record_id": "aws:6:2600:1fe2:6000::/40:AMAZON:us-east-2:us-east-2"
-        },
-        {
-          "cidr": "2600:1fe2:6000::/40",
-          "metadata": {
-            "cidr": "2600:1fe2:6000::/40",
-            "extra": {},
-            "family": 6,
-            "feed": "aws-ip-ranges",
-            "network_border_group": "us-east-2",
-            "record_id": "aws:6:2600:1fe2:6000::/40:EC2:us-east-2:us-east-2",
-            "region": "us-east-2",
-            "service": "EC2",
-            "vendor": "aws"
-          },
-          "record_id": "aws:6:2600:1fe2:6000::/40:EC2:us-east-2:us-east-2"
+          "record_id": "atlassian:cd011e6f2bce:4:255.255.255.0/32"
         }
       ],
       "metadata_changed": [],
-      "removed": [
+      "removed": []
+    },
+    "aws/aws-ip-ranges": {
+      "added": [
         {
-          "cidr": "1.179.60.0/23",
+          "cidr": "104.255.56.63/32",
           "metadata": {
-            "cidr": "1.179.60.0/23",
+            "cidr": "104.255.56.63/32",
             "extra": {},
             "family": 4,
             "feed": "aws-ip-ranges",
-            "network_border_group": "GLOBAL",
-            "record_id": "aws:4:1.179.60.0/23:GLOBALACCELERATOR:GLOBAL:GLOBAL",
-            "region": "GLOBAL",
-            "service": "GLOBALACCELERATOR",
-            "vendor": "aws"
-          },
-          "record_id": "aws:4:1.179.60.0/23:GLOBALACCELERATOR:GLOBAL:GLOBAL"
-        },
-        {
-          "cidr": "2600:f0f1:90::/44",
-          "metadata": {
-            "cidr": "2600:f0f1:90::/44",
-            "extra": {},
-            "family": 6,
-            "feed": "aws-ip-ranges",
-            "network_border_group": "GLOBAL",
-            "record_id": "aws:6:2600:f0f1:90::/44:AMAZON:GLOBAL:GLOBAL",
-            "region": "GLOBAL",
+            "network_border_group": "us-east-1",
+            "record_id": "aws:4:104.255.56.63/32:AMAZON:us-east-1:us-east-1",
+            "region": "us-east-1",
             "service": "AMAZON",
             "vendor": "aws"
           },
-          "record_id": "aws:6:2600:f0f1:90::/44:AMAZON:GLOBAL:GLOBAL"
+          "record_id": "aws:4:104.255.56.63/32:AMAZON:us-east-1:us-east-1"
         },
         {
-          "cidr": "2600:f0f1:90::/44",
+          "cidr": "104.255.56.64/32",
           "metadata": {
-            "cidr": "2600:f0f1:90::/44",
+            "cidr": "104.255.56.64/32",
             "extra": {},
-            "family": 6,
+            "family": 4,
             "feed": "aws-ip-ranges",
-            "network_border_group": "GLOBAL",
-            "record_id": "aws:6:2600:f0f1:90::/44:EC2:GLOBAL:GLOBAL",
-            "region": "GLOBAL",
+            "network_border_group": "us-east-1",
+            "record_id": "aws:4:104.255.56.64/32:AMAZON:us-east-1:us-east-1",
+            "region": "us-east-1",
+            "service": "AMAZON",
+            "vendor": "aws"
+          },
+          "record_id": "aws:4:104.255.56.64/32:AMAZON:us-east-1:us-east-1"
+        },
+        {
+          "cidr": "16.61.68.0/23",
+          "metadata": {
+            "cidr": "16.61.68.0/23",
+            "extra": {},
+            "family": 4,
+            "feed": "aws-ip-ranges",
+            "network_border_group": "eu-west-2",
+            "record_id": "aws:4:16.61.68.0/23:AMAZON:eu-west-2:eu-west-2",
+            "region": "eu-west-2",
+            "service": "AMAZON",
+            "vendor": "aws"
+          },
+          "record_id": "aws:4:16.61.68.0/23:AMAZON:eu-west-2:eu-west-2"
+        },
+        {
+          "cidr": "35.98.112.0/20",
+          "metadata": {
+            "cidr": "35.98.112.0/20",
+            "extra": {},
+            "family": 4,
+            "feed": "aws-ip-ranges",
+            "network_border_group": "sa-east-1",
+            "record_id": "aws:4:35.98.112.0/20:AMAZON:sa-east-1:sa-east-1",
+            "region": "sa-east-1",
+            "service": "AMAZON",
+            "vendor": "aws"
+          },
+          "record_id": "aws:4:35.98.112.0/20:AMAZON:sa-east-1:sa-east-1"
+        },
+        {
+          "cidr": "35.98.96.0/20",
+          "metadata": {
+            "cidr": "35.98.96.0/20",
+            "extra": {},
+            "family": 4,
+            "feed": "aws-ip-ranges",
+            "network_border_group": "sa-east-1",
+            "record_id": "aws:4:35.98.96.0/20:AMAZON:sa-east-1:sa-east-1",
+            "region": "sa-east-1",
+            "service": "AMAZON",
+            "vendor": "aws"
+          },
+          "record_id": "aws:4:35.98.96.0/20:AMAZON:sa-east-1:sa-east-1"
+        },
+        {
+          "cidr": "40.168.255.0/24",
+          "metadata": {
+            "cidr": "40.168.255.0/24",
+            "extra": {},
+            "family": 4,
+            "feed": "aws-ip-ranges",
+            "network_border_group": "us-west-2-lax-1",
+            "record_id": "aws:4:40.168.255.0/24:AMAZON:us-west-2:us-west-2-lax-1",
+            "region": "us-west-2",
+            "service": "AMAZON",
+            "vendor": "aws"
+          },
+          "record_id": "aws:4:40.168.255.0/24:AMAZON:us-west-2:us-west-2-lax-1"
+        },
+        {
+          "cidr": "40.168.255.0/24",
+          "metadata": {
+            "cidr": "40.168.255.0/24",
+            "extra": {},
+            "family": 4,
+            "feed": "aws-ip-ranges",
+            "network_border_group": "us-west-2-lax-1",
+            "record_id": "aws:4:40.168.255.0/24:EC2:us-west-2:us-west-2-lax-1",
+            "region": "us-west-2",
             "service": "EC2",
             "vendor": "aws"
           },
-          "record_id": "aws:6:2600:f0f1:90::/44:EC2:GLOBAL:GLOBAL"
+          "record_id": "aws:4:40.168.255.0/24:EC2:us-west-2:us-west-2-lax-1"
+        },
+        {
+          "cidr": "2631:0:2000::/39",
+          "metadata": {
+            "cidr": "2631:0:2000::/39",
+            "extra": {},
+            "family": 6,
+            "feed": "aws-ip-ranges",
+            "network_border_group": "sa-east-1",
+            "record_id": "aws:6:2631:0:2000::/39:AMAZON:sa-east-1:sa-east-1",
+            "region": "sa-east-1",
+            "service": "AMAZON",
+            "vendor": "aws"
+          },
+          "record_id": "aws:6:2631:0:2000::/39:AMAZON:sa-east-1:sa-east-1"
+        },
+        {
+          "cidr": "2631:0:2200::/39",
+          "metadata": {
+            "cidr": "2631:0:2200::/39",
+            "extra": {},
+            "family": 6,
+            "feed": "aws-ip-ranges",
+            "network_border_group": "sa-east-1",
+            "record_id": "aws:6:2631:0:2200::/39:AMAZON:sa-east-1:sa-east-1",
+            "region": "sa-east-1",
+            "service": "AMAZON",
+            "vendor": "aws"
+          },
+          "record_id": "aws:6:2631:0:2200::/39:AMAZON:sa-east-1:sa-east-1"
         }
-      ]
+      ],
+      "metadata_changed": [],
+      "removed": []
     }
   },
-  "from_date": "2026-04-22",
+  "from_date": "2026-04-23",
   "has_prior_baseline": true,
   "message": null,
   "stale_feeds": [],
   "summary": [
     {
-      "added": 0,
+      "added": 12,
       "feed": "atlassian-ip-ranges",
       "instance": null,
       "metadata_changed": 0,
@@ -307,11 +732,11 @@
       "vendor": "atlassian"
     },
     {
-      "added": 16,
+      "added": 9,
       "feed": "aws-ip-ranges",
       "instance": null,
       "metadata_changed": 0,
-      "removed": 3,
+      "removed": 0,
       "vendor": "aws"
     },
     {
@@ -347,5 +772,5 @@
       "vendor": "m365"
     }
   ],
-  "to_date": "2026-04-23"
+  "to_date": "2026-04-24"
 }

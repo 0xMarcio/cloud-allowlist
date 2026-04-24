@@ -1,5 +1,5 @@
 {
-  "creationDate": "2026-04-07T02:01:27.152558",
+  "creationDate": "2026-04-23T22:27:38.526318",
   "items": [
     {
       "cidr": "52.82.172.0/22",
@@ -415,6 +415,22 @@
       ],
       "region": [
         "us-east-1"
+      ]
+    },
+    {
+      "cidr": "104.192.138.224/28",
+      "direction": [
+        "egress"
+      ],
+      "mask": "255.255.255.240",
+      "mask_len": 28,
+      "network": "104.192.138.224",
+      "perimeter": "commercial",
+      "product": [
+        "rovo-crawler"
+      ],
+      "region": [
+        "us-west-1"
       ]
     },
     {
@@ -1709,6 +1725,75 @@
       ],
       "region": [
         "us-west-2"
+      ]
+    },
+    {
+      "cidr": "104.192.138.0/24",
+      "direction": [
+        "ingress"
+      ],
+      "mask": "255.255.255.0",
+      "mask_len": 24,
+      "network": "104.192.138.0",
+      "perimeter": "commercial",
+      "product": [
+        "bitbucket",
+        "confluence",
+        "forge",
+        "halp",
+        "jira",
+        "loom",
+        "statuspage",
+        "trello"
+      ],
+      "region": [
+        "global"
+      ]
+    },
+    {
+      "cidr": "104.192.139.0/24",
+      "direction": [
+        "ingress"
+      ],
+      "mask": "255.255.255.0",
+      "mask_len": 24,
+      "network": "104.192.139.0",
+      "perimeter": "commercial",
+      "product": [
+        "bitbucket",
+        "confluence",
+        "forge",
+        "halp",
+        "jira",
+        "loom",
+        "statuspage",
+        "trello"
+      ],
+      "region": [
+        "global"
+      ]
+    },
+    {
+      "cidr": "104.192.141.0/24",
+      "direction": [
+        "ingress"
+      ],
+      "mask": "255.255.255.0",
+      "mask_len": 24,
+      "network": "104.192.141.0",
+      "perimeter": "commercial",
+      "product": [
+        "bitbucket",
+        "confluence",
+        "forge",
+        "halp",
+        "jira",
+        "loom",
+        "statuspage",
+        "trello"
+      ],
+      "region": [
+        "global"
       ]
     },
     {
@@ -4640,5 +4725,5 @@
       ]
     }
   ],
-  "syncToken": 1775527287
+  "syncToken": 1776983258
 }

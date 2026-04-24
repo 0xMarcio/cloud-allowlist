@@ -1,12 +1,12 @@
 # Cloud Allowlist Change Report
 
-- Baseline: `2026-04-22`
-- Current: `2026-04-23`
+- Baseline: `2026-04-23`
+- Current: `2026-04-24`
 
 ## Summary
 
-- `atlassian/atlassian-ip-ranges`: added 0, removed 0, metadata changed 0
-- `aws/aws-ip-ranges`: added 16, removed 3, metadata changed 0
+- `atlassian/atlassian-ip-ranges`: added 12, removed 0, metadata changed 0
+- `aws/aws-ip-ranges`: added 9, removed 0, metadata changed 0
 - `github/github-meta`: added 0, removed 0, metadata changed 0
 - `google/google-cloud`: added 0, removed 0, metadata changed 0
 - `google/google-goog`: added 0, removed 0, metadata changed 0
@@ -14,24 +14,29 @@
 
 ## Details
 
+### `atlassian/atlassian-ip-ranges`
+
+- Added `104.192.138.224/28`
+- Added `104.192.138.224/32`
+- Added `255.255.255.240/32`
+- Added `104.192.138.0/24`
+- Added `104.192.138.0/32`
+- Added `255.255.255.0/32`
+- Added `104.192.141.0/24`
+- Added `104.192.141.0/32`
+- Added `255.255.255.0/32`
+- Added `104.192.139.0/24`
+- Added `104.192.139.0/32`
+- Added `255.255.255.0/32`
+
 ### `aws/aws-ip-ranges`
 
-- Added `1.179.60.0/23`
-- Added `15.129.48.0/23`
-- Added `15.129.48.0/23`
-- Added `15.129.52.0/22`
-- Added `15.129.52.0/22`
-- Added `45.33.173.0/24`
-- Added `45.33.174.0/24`
-- Added `69.107.12.176/29`
-- Added `69.107.12.184/29`
-- Added `69.107.12.192/29`
-- Added `69.107.12.200/29`
-- Added `2600:1f01:4926::/47`
-- Added `2600:1fe0:6000::/40`
-- Added `2600:1fe0:6000::/40`
-- Added `2600:1fe2:6000::/40`
-- Added `2600:1fe2:6000::/40`
-- Removed `1.179.60.0/23`
-- Removed `2600:f0f1:90::/44`
-- Removed `2600:f0f1:90::/44`
+- Added `104.255.56.63/32`
+- Added `104.255.56.64/32`
+- Added `16.61.68.0/23`
+- Added `35.98.112.0/20`
+- Added `35.98.96.0/20`
+- Added `40.168.255.0/24`
+- Added `40.168.255.0/24`
+- Added `2631:0:2000::/39`
+- Added `2631:0:2200::/39`
