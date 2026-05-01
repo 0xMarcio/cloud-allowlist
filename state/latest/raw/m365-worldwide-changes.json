@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "disposition": "Remove",
+    "endpointSetId": 33,
+    "id": 1361,
+    "impact": "RemovedIpOrUrl",
+    "previous": {
+      "category": "Default",
+      "expressRoute": "False",
+      "notes": "SharePoint Hybrid Search - Endpoint to SearchContentService where the hybrid crawler feeds documents",
+      "required": "False",
+      "serviceArea": "SharePoint",
+      "tcpPorts": "443",
+      "udpPorts": null
+    },
+    "remove": {
+      "urls": [
+        "*.search.production.emea.trafficmanager.net",
+        "*.search.production.us.trafficmanager.net"
+      ]
+    },
+    "version": "2026043000"
+  }
+]
