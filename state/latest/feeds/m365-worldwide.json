@@ -5,7 +5,7 @@
       "latest": "2026043000"
     },
     "feed": "m365-endpoints",
-    "fetch_status": "success",
+    "fetch_status": "cached",
     "instance": "Worldwide",
     "record_count": 129,
     "source_version": "2026043000",
@@ -4109,5 +4109,5 @@
       "vendor": "m365"
     }
   ],
-  "snapshot_date": "2026-05-01"
+  "snapshot_date": "2026-05-02"
 }

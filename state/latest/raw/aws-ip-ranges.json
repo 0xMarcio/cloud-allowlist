@@ -1,5 +1,5 @@
 {
-  "createDate": "2026-04-30-19-17-06",
+  "createDate": "2026-05-01-15-07-06",
   "ipv6_prefixes": [
     {
       "ipv6_prefix": "2406:daba:f000::/40",
@@ -84016,12 +84016,6 @@
       "service": "GLOBALACCELERATOR"
     },
     {
-      "ip_prefix": "13.248.106.0/24",
-      "network_border_group": "me-south-1",
-      "region": "me-south-1",
-      "service": "GLOBALACCELERATOR"
-    },
-    {
       "ip_prefix": "13.248.99.0/24",
       "network_border_group": "us-west-1",
       "region": "us-west-1",
@@ -93394,5 +93388,5 @@
       "service": "DYNAMODB"
     }
   ],
-  "syncToken": "1777576626"
+  "syncToken": "1777648026"
 }
