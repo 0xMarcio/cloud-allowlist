@@ -1,5 +1,5 @@
 {
-  "creationDate": "2026-04-23T22:27:38.526318",
+  "creationDate": "2026-05-07T02:56:07.149506",
   "items": [
     {
       "cidr": "52.82.172.0/22",
@@ -1781,6 +1781,75 @@
       "mask": "255.255.255.0",
       "mask_len": 24,
       "network": "104.192.141.0",
+      "perimeter": "commercial",
+      "product": [
+        "bitbucket",
+        "confluence",
+        "forge",
+        "halp",
+        "jira",
+        "loom",
+        "statuspage",
+        "trello"
+      ],
+      "region": [
+        "global"
+      ]
+    },
+    {
+      "cidr": "2401:1d80:32fd::/48",
+      "direction": [
+        "ingress"
+      ],
+      "mask": "ffff:ffff:ffff::",
+      "mask_len": 48,
+      "network": "2401:1d80:32fd::",
+      "perimeter": "commercial",
+      "product": [
+        "bitbucket",
+        "confluence",
+        "forge",
+        "halp",
+        "jira",
+        "loom",
+        "statuspage",
+        "trello"
+      ],
+      "region": [
+        "global"
+      ]
+    },
+    {
+      "cidr": "2401:1d80:32fe::/48",
+      "direction": [
+        "ingress"
+      ],
+      "mask": "ffff:ffff:ffff::",
+      "mask_len": 48,
+      "network": "2401:1d80:32fe::",
+      "perimeter": "commercial",
+      "product": [
+        "bitbucket",
+        "confluence",
+        "forge",
+        "halp",
+        "jira",
+        "loom",
+        "statuspage",
+        "trello"
+      ],
+      "region": [
+        "global"
+      ]
+    },
+    {
+      "cidr": "2401:1d80:32ff::/48",
+      "direction": [
+        "ingress"
+      ],
+      "mask": "ffff:ffff:ffff::",
+      "mask_len": 48,
+      "network": "2401:1d80:32ff::",
       "perimeter": "commercial",
       "product": [
         "bitbucket",
@@ -4725,5 +4794,5 @@
       ]
     }
   ],
-  "syncToken": 1776983258
+  "syncToken": 1778122567
 }
