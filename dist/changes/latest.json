@@ -1,83 +1,8 @@
 {
-  "details": {
-    "google/google-cloud": {
-      "added": [
-        {
-          "cidr": "34.183.80.0/24",
-          "metadata": {
-            "cidr": "34.183.80.0/24",
-            "extra": {
-              "scope": "asia-southeast1",
-              "service": "Google Cloud"
-            },
-            "family": 4,
-            "feed": "google-cloud",
-            "record_id": "google:google-cloud:4:34.183.80.0/24:Google Cloud:asia-southeast1",
-            "region": "asia-southeast1",
-            "service": "Google Cloud",
-            "vendor": "google"
-          },
-          "record_id": "google:google-cloud:4:34.183.80.0/24:Google Cloud:asia-southeast1"
-        },
-        {
-          "cidr": "34.183.81.0/24",
-          "metadata": {
-            "cidr": "34.183.81.0/24",
-            "extra": {
-              "scope": "us-east1",
-              "service": "Google Cloud"
-            },
-            "family": 4,
-            "feed": "google-cloud",
-            "record_id": "google:google-cloud:4:34.183.81.0/24:Google Cloud:us-east1",
-            "region": "us-east1",
-            "service": "Google Cloud",
-            "vendor": "google"
-          },
-          "record_id": "google:google-cloud:4:34.183.81.0/24:Google Cloud:us-east1"
-        },
-        {
-          "cidr": "34.184.75.0/24",
-          "metadata": {
-            "cidr": "34.184.75.0/24",
-            "extra": {
-              "scope": "asia-southeast1",
-              "service": "Google Cloud"
-            },
-            "family": 4,
-            "feed": "google-cloud",
-            "record_id": "google:google-cloud:4:34.184.75.0/24:Google Cloud:asia-southeast1",
-            "region": "asia-southeast1",
-            "service": "Google Cloud",
-            "vendor": "google"
-          },
-          "record_id": "google:google-cloud:4:34.184.75.0/24:Google Cloud:asia-southeast1"
-        },
-        {
-          "cidr": "34.184.80.0/24",
-          "metadata": {
-            "cidr": "34.184.80.0/24",
-            "extra": {
-              "scope": "us-east1",
-              "service": "Google Cloud"
-            },
-            "family": 4,
-            "feed": "google-cloud",
-            "record_id": "google:google-cloud:4:34.184.80.0/24:Google Cloud:us-east1",
-            "region": "us-east1",
-            "service": "Google Cloud",
-            "vendor": "google"
-          },
-          "record_id": "google:google-cloud:4:34.184.80.0/24:Google Cloud:us-east1"
-        }
-      ],
-      "metadata_changed": [],
-      "removed": []
-    }
-  },
-  "from_date": "2026-05-09",
+  "details": {},
+  "from_date": "2026-05-10",
   "has_prior_baseline": true,
-  "message": null,
+  "message": "No changes detected.",
   "stale_feeds": [],
   "summary": [
     {
@@ -105,7 +30,7 @@
       "vendor": "github"
     },
     {
-      "added": 4,
+      "added": 0,
       "feed": "google-cloud",
       "instance": null,
       "metadata_changed": 0,
@@ -129,5 +54,5 @@
       "vendor": "m365"
     }
   ],
-  "to_date": "2026-05-10"
+  "to_date": "2026-05-11"
 }

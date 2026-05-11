@@ -300,8 +300,8 @@
     {
       "dataset": "google-cloud",
       "details": {
-        "creationTime": "2026-05-09T19:06:09.746717",
-        "syncToken": "1778378769746"
+        "creationTime": "2026-05-10T19:05:55.00584",
+        "syncToken": "1778465155005"
       },
       "feed": "google-cloud",
       "fetch_status": "success",
@@ -310,19 +310,19 @@
       "ipv6_address_count": 910321142169815768553750528,
       "ipv6_cidr_count": 48,
       "record_count": 941,
-      "source_published_at": "2026-05-09T19:06:09.746717",
-      "source_version": "1778378769746",
+      "source_published_at": "2026-05-10T19:05:55.00584",
+      "source_version": "1778465155005",
       "stale": false,
       "unique_cidr_count": 941,
-      "updated_at": "2026-05-09",
+      "updated_at": "2026-05-10",
       "upstream_url": "https://www.gstatic.com/ipranges/cloud.json",
       "vendor": "google"
     },
     {
       "dataset": "google-goog",
       "details": {
-        "creationTime": "2026-05-09T19:06:09.746717",
-        "syncToken": "1778378769746"
+        "creationTime": "2026-05-10T19:05:55.00584",
+        "syncToken": "1778465155005"
       },
       "feed": "google-goog",
       "fetch_status": "success",
@@ -331,11 +331,11 @@
       "ipv6_address_count": 2060860680695484717817669877760,
       "ipv6_cidr_count": 15,
       "record_count": 111,
-      "source_published_at": "2026-05-09T19:06:09.746717",
-      "source_version": "1778378769746",
+      "source_published_at": "2026-05-10T19:05:55.00584",
+      "source_version": "1778465155005",
       "stale": false,
       "unique_cidr_count": 111,
-      "updated_at": "2026-05-09",
+      "updated_at": "2026-05-10",
       "upstream_url": "https://www.gstatic.com/ipranges/goog.json",
       "vendor": "google"
     },
@@ -365,7 +365,7 @@
   "ipv6_address_count": 4401699326371535307994461896734,
   "ipv6_cidr_count": 4237,
   "record_count": 24049,
-  "snapshot_date": "2026-05-10",
+  "snapshot_date": "2026-05-11",
   "stale_feed_count": 0,
   "vendor_count": 5
 }
