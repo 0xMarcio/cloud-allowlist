@@ -1,5 +1,5 @@
 {
-  "cidr_count": 18737,
+  "cidr_count": 18740,
   "feed_count": 6,
   "feeds": [
     {
@@ -28,21 +28,21 @@
     {
       "dataset": "aws",
       "details": {
-        "createDate": "2026-05-12-22-07-05",
-        "syncToken": "1778623625"
+        "createDate": "2026-05-13-20-57-05",
+        "syncToken": "1778705825"
       },
       "feed": "aws-ip-ranges",
       "fetch_status": "success",
       "ipv4_address_count": 101725528,
-      "ipv4_cidr_count": 7612,
+      "ipv4_cidr_count": 7613,
       "ipv6_address_count": 1587828873090564184640608796685,
-      "ipv6_cidr_count": 2751,
-      "record_count": 15671,
-      "source_published_at": "2026-05-12-22-07-05",
-      "source_version": "1778623625",
+      "ipv6_cidr_count": 2753,
+      "record_count": 15674,
+      "source_published_at": "2026-05-13-20-57-05",
+      "source_version": "1778705825",
       "stale": false,
-      "unique_cidr_count": 10363,
-      "updated_at": "2026-05-12",
+      "unique_cidr_count": 10366,
+      "updated_at": "2026-05-13",
       "upstream_url": "https://ip-ranges.amazonaws.com/ip-ranges.json",
       "vendor": "aws"
     },
@@ -283,15 +283,17 @@
           ]
         }
       },
+      "error_message": "HTTP Error 403: rate limit exceeded",
       "feed": "github-meta",
-      "fetch_status": "cached",
+      "fetch_status": "stale-fallback",
       "ipv4_address_count": 27055100,
       "ipv4_cidr_count": 5467,
       "ipv6_address_count": 713292393158656557623724212224,
       "ipv6_cidr_count": 1380,
+      "last_good_snapshot_date": "2026-05-13",
       "record_count": 6901,
       "source_version": "sha256:45eaf92984f4af8f528c17c5fe8148a2900e00d36e41dbd9e12561ff4f365f55",
-      "stale": false,
+      "stale": true,
       "unique_cidr_count": 6847,
       "updated_at": "2026-05-12",
       "upstream_url": "https://api.github.com/meta",
@@ -300,8 +302,8 @@
     {
       "dataset": "google-cloud",
       "details": {
-        "creationTime": "2026-05-12T19:08:57.206984",
-        "syncToken": "1778638137206"
+        "creationTime": "2026-05-13T19:06:07.847686",
+        "syncToken": "1778724367847"
       },
       "feed": "google-cloud",
       "fetch_status": "success",
@@ -310,19 +312,19 @@
       "ipv6_address_count": 910321142169815768553750528,
       "ipv6_cidr_count": 48,
       "record_count": 941,
-      "source_published_at": "2026-05-12T19:08:57.206984",
-      "source_version": "1778638137206",
+      "source_published_at": "2026-05-13T19:06:07.847686",
+      "source_version": "1778724367847",
       "stale": false,
       "unique_cidr_count": 941,
-      "updated_at": "2026-05-12",
+      "updated_at": "2026-05-13",
       "upstream_url": "https://www.gstatic.com/ipranges/cloud.json",
       "vendor": "google"
     },
     {
       "dataset": "google-goog",
       "details": {
-        "creationTime": "2026-05-12T19:08:57.206984",
-        "syncToken": "1778638137206"
+        "creationTime": "2026-05-13T19:06:07.847686",
+        "syncToken": "1778724367847"
       },
       "feed": "google-goog",
       "fetch_status": "success",
@@ -331,11 +333,11 @@
       "ipv6_address_count": 2060860680695484717817669877760,
       "ipv6_cidr_count": 15,
       "record_count": 111,
-      "source_published_at": "2026-05-12T19:08:57.206984",
-      "source_version": "1778638137206",
+      "source_published_at": "2026-05-13T19:06:07.847686",
+      "source_version": "1778724367847",
       "stale": false,
       "unique_cidr_count": 111,
-      "updated_at": "2026-05-12",
+      "updated_at": "2026-05-13",
       "upstream_url": "https://www.gstatic.com/ipranges/goog.json",
       "vendor": "google"
     },
@@ -361,11 +363,11 @@
     }
   ],
   "ipv4_address_count": 153165897,
-  "ipv4_cidr_count": 14361,
+  "ipv4_cidr_count": 14362,
   "ipv6_address_count": 4406651089904430994582906339358,
-  "ipv6_cidr_count": 4376,
-  "record_count": 24386,
-  "snapshot_date": "2026-05-13",
-  "stale_feed_count": 0,
+  "ipv6_cidr_count": 4378,
+  "record_count": 24389,
+  "snapshot_date": "2026-05-14",
+  "stale_feed_count": 1,
   "vendor_count": 5
 }
