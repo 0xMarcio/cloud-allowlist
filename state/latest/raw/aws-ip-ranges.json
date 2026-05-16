@@ -1,5 +1,5 @@
 {
-  "createDate": "2026-05-15-01-47-05",
+  "createDate": "2026-05-15-21-17-04",
   "ipv6_prefixes": [
     {
       "ipv6_prefix": "2406:daba:f000::/40",
@@ -16853,6 +16853,12 @@
       "ipv6_prefix": "2600:1f60:6000::/40",
       "network_border_group": "us-east-2",
       "region": "us-east-2",
+      "service": "S3"
+    },
+    {
+      "ipv6_prefix": "2600:1f61:4000::/39",
+      "network_border_group": "us-west-2",
+      "region": "us-west-2",
       "service": "S3"
     },
     {
@@ -47303,8 +47309,8 @@
     },
     {
       "ip_prefix": "13.248.106.192/28",
-      "network_border_group": "me-south-1",
-      "region": "me-south-1",
+      "network_border_group": "eu-central-1",
+      "region": "eu-central-1",
       "service": "AMAZON"
     },
     {
@@ -94036,5 +94042,5 @@
       "service": "DYNAMODB"
     }
   ],
-  "syncToken": "1778809625"
+  "syncToken": "1778879824"
 }
