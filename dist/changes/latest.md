@@ -1,7 +1,7 @@
 # Cloud Allowlist Change Report
 
-- Baseline: `2026-05-23`
-- Current: `2026-05-24`
+- Baseline: `2026-05-24`
+- Current: `2026-05-25`
 - No changes detected.
 
 ## Summary
