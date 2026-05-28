@@ -1,5 +1,5 @@
 {
-  "createDate": "2026-05-27-00-57-05",
+  "createDate": "2026-05-27-22-07-06",
   "ipv6_prefixes": [
     {
       "ipv6_prefix": "2406:daba:f000::/40",
@@ -1839,6 +1839,12 @@
     },
     {
       "ipv6_prefix": "2631:0:800::/39",
+      "network_border_group": "ca-central-1",
+      "region": "ca-central-1",
+      "service": "AMAZON"
+    },
+    {
+      "ipv6_prefix": "2631:1:10c::/48",
       "network_border_group": "ca-central-1",
       "region": "ca-central-1",
       "service": "AMAZON"
@@ -6065,6 +6071,12 @@
       "ipv6_prefix": "2606:8140:400::/40",
       "network_border_group": "us-west-2",
       "region": "us-west-2",
+      "service": "AMAZON"
+    },
+    {
+      "ipv6_prefix": "2631:1:10b::/48",
+      "network_border_group": "us-east-2",
+      "region": "us-east-2",
       "service": "AMAZON"
     },
     {
@@ -11721,7 +11733,7 @@
     },
     {
       "ipv6_prefix": "2600:1f19:c000::/36",
-      "network_border_group": "us-east-1-dfw-2",
+      "network_border_group": "us-east-1",
       "region": "us-east-1",
       "service": "AMAZON"
     },
@@ -13119,7 +13131,7 @@
     },
     {
       "ipv6_prefix": "2600:1f29:c000::/36",
-      "network_border_group": "us-east-1-dfw-2",
+      "network_border_group": "us-east-1",
       "region": "us-east-1",
       "service": "AMAZON"
     },
@@ -21998,6 +22010,12 @@
       "service": "EC2"
     },
     {
+      "ipv6_prefix": "2631:1:10c::/48",
+      "network_border_group": "ca-central-1",
+      "region": "ca-central-1",
+      "service": "EC2"
+    },
+    {
       "ipv6_prefix": "2a05:d032:e000::/40",
       "network_border_group": "me-south-1",
       "region": "me-south-1",
@@ -25325,6 +25343,12 @@
       "ipv6_prefix": "2606:8140:400::/40",
       "network_border_group": "us-west-2",
       "region": "us-west-2",
+      "service": "EC2"
+    },
+    {
+      "ipv6_prefix": "2631:1:10b::/48",
+      "network_border_group": "us-east-2",
+      "region": "us-east-2",
       "service": "EC2"
     },
     {
@@ -29787,7 +29811,7 @@
     },
     {
       "ipv6_prefix": "2600:1f19:c000::/36",
-      "network_border_group": "us-east-1-dfw-2",
+      "network_border_group": "us-east-1",
       "region": "us-east-1",
       "service": "EC2"
     },
@@ -30903,7 +30927,7 @@
     },
     {
       "ipv6_prefix": "2600:1f29:c000::/36",
-      "network_border_group": "us-east-1-dfw-2",
+      "network_border_group": "us-east-1",
       "region": "us-east-1",
       "service": "EC2"
     },
@@ -95302,5 +95326,5 @@
       "service": "DYNAMODB"
     }
   ],
-  "syncToken": "1779843425"
+  "syncToken": "1779919626"
 }

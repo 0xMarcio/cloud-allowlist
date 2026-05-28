@@ -1,12 +1,12 @@
 # Cloud Allowlist Change Report
 
-- Baseline: `2026-05-26`
-- Current: `2026-05-27`
+- Baseline: `2026-05-27`
+- Current: `2026-05-28`
 
 ## Summary
 
 - `atlassian/atlassian-ip-ranges`: added 0, removed 0, metadata changed 0
-- `aws/aws-ip-ranges`: added 8, removed 2, metadata changed 0
+- `aws/aws-ip-ranges`: added 8, removed 4, metadata changed 0
 - `github/github-meta`: added 0, removed 0, metadata changed 0
 - `google/google-cloud`: added 0, removed 0, metadata changed 0
 - `google/google-goog`: added 0, removed 0, metadata changed 0
@@ -16,13 +16,15 @@
 
 ### `aws/aws-ip-ranges`
 
-- Added `43.193.66.0/23`
-- Added `43.193.66.0/23`
-- Added `43.195.16.0/22`
-- Added `43.195.16.0/22`
-- Added `43.195.20.0/23`
-- Added `43.195.20.0/23`
-- Added `5.60.16.0/24`
-- Added `5.60.16.0/24`
-- Removed `2600:f0f1:1c::/48`
-- Removed `2600:f0f1:1c::/48`
+- Added `2600:1f19:c000::/36`
+- Added `2600:1f19:c000::/36`
+- Added `2600:1f29:c000::/36`
+- Added `2600:1f29:c000::/36`
+- Added `2631:1:10b::/48`
+- Added `2631:1:10b::/48`
+- Added `2631:1:10c::/48`
+- Added `2631:1:10c::/48`
+- Removed `2600:1f19:c000::/36`
+- Removed `2600:1f19:c000::/36`
+- Removed `2600:1f29:c000::/36`
+- Removed `2600:1f29:c000::/36`
