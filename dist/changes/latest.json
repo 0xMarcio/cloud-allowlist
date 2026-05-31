@@ -1,60 +1,8 @@
 {
-  "details": {
-    "aws/aws-ip-ranges": {
-      "added": [
-        {
-          "cidr": "13.196.0.0/14",
-          "metadata": {
-            "cidr": "13.196.0.0/14",
-            "extra": {},
-            "family": 4,
-            "feed": "aws-ip-ranges",
-            "network_border_group": "ap-northeast-1",
-            "record_id": "aws:4:13.196.0.0/14:EC2:ap-northeast-1:ap-northeast-1",
-            "region": "ap-northeast-1",
-            "service": "EC2",
-            "vendor": "aws"
-          },
-          "record_id": "aws:4:13.196.0.0/14:EC2:ap-northeast-1:ap-northeast-1"
-        },
-        {
-          "cidr": "15.175.0.0/16",
-          "metadata": {
-            "cidr": "15.175.0.0/16",
-            "extra": {},
-            "family": 4,
-            "feed": "aws-ip-ranges",
-            "network_border_group": "ca-central-1",
-            "record_id": "aws:4:15.175.0.0/16:EC2:ca-central-1:ca-central-1",
-            "region": "ca-central-1",
-            "service": "EC2",
-            "vendor": "aws"
-          },
-          "record_id": "aws:4:15.175.0.0/16:EC2:ca-central-1:ca-central-1"
-        },
-        {
-          "cidr": "15.252.0.0/16",
-          "metadata": {
-            "cidr": "15.252.0.0/16",
-            "extra": {},
-            "family": 4,
-            "feed": "aws-ip-ranges",
-            "network_border_group": "ap-south-1",
-            "record_id": "aws:4:15.252.0.0/16:EC2:ap-south-1:ap-south-1",
-            "region": "ap-south-1",
-            "service": "EC2",
-            "vendor": "aws"
-          },
-          "record_id": "aws:4:15.252.0.0/16:EC2:ap-south-1:ap-south-1"
-        }
-      ],
-      "metadata_changed": [],
-      "removed": []
-    }
-  },
-  "from_date": "2026-05-29",
+  "details": {},
+  "from_date": "2026-05-30",
   "has_prior_baseline": true,
-  "message": null,
+  "message": "No changes detected.",
   "stale_feeds": [],
   "summary": [
     {
@@ -66,7 +14,7 @@
       "vendor": "atlassian"
     },
     {
-      "added": 3,
+      "added": 0,
       "feed": "aws-ip-ranges",
       "instance": null,
       "metadata_changed": 0,
@@ -106,5 +54,5 @@
       "vendor": "m365"
     }
   ],
-  "to_date": "2026-05-30"
+  "to_date": "2026-05-31"
 }

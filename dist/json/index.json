@@ -1,7 +1,7 @@
 {
   "cidr_count": 18916,
   "record_count": 24722,
-  "snapshot_date": "2026-05-30",
+  "snapshot_date": "2026-05-31",
   "vendors": {
     "atlassian": {
       "cidrs": [
