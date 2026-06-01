@@ -1,5 +1,5 @@
 {
-  "cidr_count": 18916,
+  "cidr_count": 18925,
   "feed_count": 6,
   "feeds": [
     {
@@ -300,29 +300,29 @@
     {
       "dataset": "google-cloud",
       "details": {
-        "creationTime": "2026-05-30T19:04:04.001427",
-        "syncToken": "1780193044001"
+        "creationTime": "2026-05-31T19:06:26.015121",
+        "syncToken": "1780279586015"
       },
       "feed": "google-cloud",
       "fetch_status": "success",
-      "ipv4_address_count": 17272192,
-      "ipv4_cidr_count": 919,
+      "ipv4_address_count": 17429376,
+      "ipv4_cidr_count": 928,
       "ipv6_address_count": 910321142169815768553750528,
       "ipv6_cidr_count": 48,
-      "record_count": 967,
-      "source_published_at": "2026-05-30T19:04:04.001427",
-      "source_version": "1780193044001",
+      "record_count": 976,
+      "source_published_at": "2026-05-31T19:06:26.015121",
+      "source_version": "1780279586015",
       "stale": false,
-      "unique_cidr_count": 967,
-      "updated_at": "2026-05-30",
+      "unique_cidr_count": 976,
+      "updated_at": "2026-05-31",
       "upstream_url": "https://www.gstatic.com/ipranges/cloud.json",
       "vendor": "google"
     },
     {
       "dataset": "google-goog",
       "details": {
-        "creationTime": "2026-05-30T19:04:04.001427",
-        "syncToken": "1780193044001"
+        "creationTime": "2026-05-31T19:06:26.015121",
+        "syncToken": "1780279586015"
       },
       "feed": "google-goog",
       "fetch_status": "success",
@@ -331,11 +331,11 @@
       "ipv6_address_count": 2060860680695484717817669877760,
       "ipv6_cidr_count": 15,
       "record_count": 111,
-      "source_published_at": "2026-05-30T19:04:04.001427",
-      "source_version": "1780193044001",
+      "source_published_at": "2026-05-31T19:06:26.015121",
+      "source_version": "1780279586015",
       "stale": false,
       "unique_cidr_count": 111,
-      "updated_at": "2026-05-30",
+      "updated_at": "2026-05-31",
       "upstream_url": "https://www.gstatic.com/ipranges/goog.json",
       "vendor": "google"
     },
@@ -361,11 +361,11 @@
     }
   ],
   "ipv4_address_count": 153171239,
-  "ipv4_cidr_count": 14446,
+  "ipv4_cidr_count": 14455,
   "ipv6_address_count": 4428331673984162925148914057246,
   "ipv6_cidr_count": 4470,
-  "record_count": 24722,
-  "snapshot_date": "2026-05-31",
+  "record_count": 24731,
+  "snapshot_date": "2026-06-01",
   "stale_feed_count": 0,
   "vendor_count": 5
 }
