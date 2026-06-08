@@ -300,8 +300,8 @@
     {
       "dataset": "google-cloud",
       "details": {
-        "creationTime": "2026-06-06T19:10:57.204059",
-        "syncToken": "1780798257204"
+        "creationTime": "2026-06-07T19:03:52.345821",
+        "syncToken": "1780884232345"
       },
       "feed": "google-cloud",
       "fetch_status": "success",
@@ -310,19 +310,19 @@
       "ipv6_address_count": 910321142169815768553750528,
       "ipv6_cidr_count": 48,
       "record_count": 976,
-      "source_published_at": "2026-06-06T19:10:57.204059",
-      "source_version": "1780798257204",
+      "source_published_at": "2026-06-07T19:03:52.345821",
+      "source_version": "1780884232345",
       "stale": false,
       "unique_cidr_count": 976,
-      "updated_at": "2026-06-06",
+      "updated_at": "2026-06-07",
       "upstream_url": "https://www.gstatic.com/ipranges/cloud.json",
       "vendor": "google"
     },
     {
       "dataset": "google-goog",
       "details": {
-        "creationTime": "2026-06-06T19:10:57.204059",
-        "syncToken": "1780798257204"
+        "creationTime": "2026-06-07T19:03:52.345821",
+        "syncToken": "1780884232345"
       },
       "feed": "google-goog",
       "fetch_status": "success",
@@ -331,11 +331,11 @@
       "ipv6_address_count": 2060860680695484717817669877760,
       "ipv6_cidr_count": 15,
       "record_count": 111,
-      "source_published_at": "2026-06-06T19:10:57.204059",
-      "source_version": "1780798257204",
+      "source_published_at": "2026-06-07T19:03:52.345821",
+      "source_version": "1780884232345",
       "stale": false,
       "unique_cidr_count": 111,
-      "updated_at": "2026-06-06",
+      "updated_at": "2026-06-07",
       "upstream_url": "https://www.gstatic.com/ipranges/goog.json",
       "vendor": "google"
     },
@@ -365,7 +365,7 @@
   "ipv6_address_count": 4439475563109843068517410144286,
   "ipv6_cidr_count": 4484,
   "record_count": 24819,
-  "snapshot_date": "2026-06-07",
+  "snapshot_date": "2026-06-08",
   "stale_feed_count": 0,
   "vendor_count": 5
 }
