@@ -1,5 +1,5 @@
 {
-  "createDate": "2026-06-08-22-57-04",
+  "createDate": "2026-06-09-19-07-05",
   "ipv6_prefixes": [
     {
       "ipv6_prefix": "2406:daba:f000::/40",
@@ -333,7 +333,7 @@
     },
     {
       "ipv6_prefix": "2a05:d02f::/36",
-      "network_border_group": "eu-central-1",
+      "network_border_group": "eu-central-1-ath-1",
       "region": "eu-central-1",
       "service": "AMAZON"
     },
@@ -14295,7 +14295,7 @@
     },
     {
       "ipv6_prefix": "2a05:d01f::/36",
-      "network_border_group": "eu-central-1",
+      "network_border_group": "eu-central-1-ath-1",
       "region": "eu-central-1",
       "service": "AMAZON"
     },
@@ -21141,7 +21141,7 @@
     },
     {
       "ipv6_prefix": "2a05:d02f::/36",
-      "network_border_group": "eu-central-1",
+      "network_border_group": "eu-central-1-ath-1",
       "region": "eu-central-1",
       "service": "EC2"
     },
@@ -32193,7 +32193,7 @@
     },
     {
       "ipv6_prefix": "2a05:d01f::/36",
-      "network_border_group": "eu-central-1",
+      "network_border_group": "eu-central-1-ath-1",
       "region": "eu-central-1",
       "service": "EC2"
     },
@@ -60173,7 +60173,7 @@
     },
     {
       "ip_prefix": "75.45.128.0/18",
-      "network_border_group": "eu-central-1",
+      "network_border_group": "eu-central-1-ath-1",
       "region": "eu-central-1",
       "service": "AMAZON"
     },
@@ -82907,7 +82907,7 @@
     },
     {
       "ip_prefix": "75.45.128.0/18",
-      "network_border_group": "eu-central-1",
+      "network_border_group": "eu-central-1-ath-1",
       "region": "eu-central-1",
       "service": "EC2"
     },
@@ -96328,5 +96328,5 @@
       "service": "DYNAMODB"
     }
   ],
-  "syncToken": "1780959424"
+  "syncToken": "1781032025"
 }
