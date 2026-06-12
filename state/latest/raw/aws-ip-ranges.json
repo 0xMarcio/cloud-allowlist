@@ -1,5 +1,5 @@
 {
-  "createDate": "2026-06-10-13-07-06",
+  "createDate": "2026-06-11-21-37-05",
   "ipv6_prefixes": [
     {
       "ipv6_prefix": "2406:daba:f000::/40",
@@ -5861,6 +5861,12 @@
       "ipv6_prefix": "2600:f0f0:8183::/48",
       "network_border_group": "eu-central-1",
       "region": "eu-central-1",
+      "service": "AMAZON"
+    },
+    {
+      "ipv6_prefix": "2600:f0f0:c102::/48",
+      "network_border_group": "us-east-1-dfw-2",
+      "region": "us-east-1",
       "service": "AMAZON"
     },
     {
@@ -20786,6 +20792,12 @@
       "service": "WORKSPACES_GATEWAYS"
     },
     {
+      "ipv6_prefix": "2406:da26:1c::/48",
+      "network_border_group": "ap-northeast-3",
+      "region": "ap-northeast-3",
+      "service": "WORKSPACES_GATEWAYS"
+    },
+    {
       "ipv6_prefix": "2406:da2a:14::/48",
       "network_border_group": "ap-south-1",
       "region": "ap-south-1",
@@ -20816,9 +20828,21 @@
       "service": "WORKSPACES_GATEWAYS"
     },
     {
+      "ipv6_prefix": "2600:1f2a:401c::/48",
+      "network_border_group": "ca-west-1",
+      "region": "ca-west-1",
+      "service": "WORKSPACES_GATEWAYS"
+    },
+    {
       "ipv6_prefix": "2a05:d024:18::/48",
       "network_border_group": "eu-central-1",
       "region": "eu-central-1",
+      "service": "WORKSPACES_GATEWAYS"
+    },
+    {
+      "ipv6_prefix": "2a05:d029:4::/48",
+      "network_border_group": "eu-central-2",
+      "region": "eu-central-2",
       "service": "WORKSPACES_GATEWAYS"
     },
     {
@@ -25451,6 +25475,12 @@
       "ipv6_prefix": "2600:f0f0:8183::/48",
       "network_border_group": "eu-central-1",
       "region": "eu-central-1",
+      "service": "EC2"
+    },
+    {
+      "ipv6_prefix": "2600:f0f0:c102::/48",
+      "network_border_group": "us-east-1-dfw-2",
+      "region": "us-east-1",
       "service": "EC2"
     },
     {
@@ -69262,6 +69292,12 @@
       "service": "AMAZON"
     },
     {
+      "ip_prefix": "78.14.116.0/23",
+      "network_border_group": "mx-central-1",
+      "region": "mx-central-1",
+      "service": "AMAZON"
+    },
+    {
       "ip_prefix": "15.228.1.128/26",
       "network_border_group": "sa-east-1",
       "region": "sa-east-1",
@@ -96346,5 +96382,5 @@
       "service": "DYNAMODB"
     }
   ],
-  "syncToken": "1781096826"
+  "syncToken": "1781213825"
 }

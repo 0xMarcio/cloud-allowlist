@@ -1,0 +1,155 @@
+{
+  "details": {
+    "aws/aws-ip-ranges": {
+      "added": [
+        {
+          "cidr": "78.14.116.0/23",
+          "metadata": {
+            "cidr": "78.14.116.0/23",
+            "extra": {},
+            "family": 4,
+            "feed": "aws-ip-ranges",
+            "network_border_group": "mx-central-1",
+            "record_id": "aws:4:78.14.116.0/23:AMAZON:mx-central-1:mx-central-1",
+            "region": "mx-central-1",
+            "service": "AMAZON",
+            "vendor": "aws"
+          },
+          "record_id": "aws:4:78.14.116.0/23:AMAZON:mx-central-1:mx-central-1"
+        },
+        {
+          "cidr": "2406:da26:1c::/48",
+          "metadata": {
+            "cidr": "2406:da26:1c::/48",
+            "extra": {},
+            "family": 6,
+            "feed": "aws-ip-ranges",
+            "network_border_group": "ap-northeast-3",
+            "record_id": "aws:6:2406:da26:1c::/48:WORKSPACES_GATEWAYS:ap-northeast-3:ap-northeast-3",
+            "region": "ap-northeast-3",
+            "service": "WORKSPACES_GATEWAYS",
+            "vendor": "aws"
+          },
+          "record_id": "aws:6:2406:da26:1c::/48:WORKSPACES_GATEWAYS:ap-northeast-3:ap-northeast-3"
+        },
+        {
+          "cidr": "2600:1f2a:401c::/48",
+          "metadata": {
+            "cidr": "2600:1f2a:401c::/48",
+            "extra": {},
+            "family": 6,
+            "feed": "aws-ip-ranges",
+            "network_border_group": "ca-west-1",
+            "record_id": "aws:6:2600:1f2a:401c::/48:WORKSPACES_GATEWAYS:ca-west-1:ca-west-1",
+            "region": "ca-west-1",
+            "service": "WORKSPACES_GATEWAYS",
+            "vendor": "aws"
+          },
+          "record_id": "aws:6:2600:1f2a:401c::/48:WORKSPACES_GATEWAYS:ca-west-1:ca-west-1"
+        },
+        {
+          "cidr": "2600:f0f0:c102::/48",
+          "metadata": {
+            "cidr": "2600:f0f0:c102::/48",
+            "extra": {},
+            "family": 6,
+            "feed": "aws-ip-ranges",
+            "network_border_group": "us-east-1-dfw-2",
+            "record_id": "aws:6:2600:f0f0:c102::/48:AMAZON:us-east-1:us-east-1-dfw-2",
+            "region": "us-east-1",
+            "service": "AMAZON",
+            "vendor": "aws"
+          },
+          "record_id": "aws:6:2600:f0f0:c102::/48:AMAZON:us-east-1:us-east-1-dfw-2"
+        },
+        {
+          "cidr": "2600:f0f0:c102::/48",
+          "metadata": {
+            "cidr": "2600:f0f0:c102::/48",
+            "extra": {},
+            "family": 6,
+            "feed": "aws-ip-ranges",
+            "network_border_group": "us-east-1-dfw-2",
+            "record_id": "aws:6:2600:f0f0:c102::/48:EC2:us-east-1:us-east-1-dfw-2",
+            "region": "us-east-1",
+            "service": "EC2",
+            "vendor": "aws"
+          },
+          "record_id": "aws:6:2600:f0f0:c102::/48:EC2:us-east-1:us-east-1-dfw-2"
+        },
+        {
+          "cidr": "2a05:d029:4::/48",
+          "metadata": {
+            "cidr": "2a05:d029:4::/48",
+            "extra": {},
+            "family": 6,
+            "feed": "aws-ip-ranges",
+            "network_border_group": "eu-central-2",
+            "record_id": "aws:6:2a05:d029:4::/48:WORKSPACES_GATEWAYS:eu-central-2:eu-central-2",
+            "region": "eu-central-2",
+            "service": "WORKSPACES_GATEWAYS",
+            "vendor": "aws"
+          },
+          "record_id": "aws:6:2a05:d029:4::/48:WORKSPACES_GATEWAYS:eu-central-2:eu-central-2"
+        }
+      ],
+      "metadata_changed": [],
+      "removed": []
+    }
+  },
+  "from_date": "2026-06-11",
+  "has_prior_baseline": true,
+  "message": null,
+  "stale_feeds": [],
+  "summary": [
+    {
+      "added": 0,
+      "feed": "atlassian-ip-ranges",
+      "instance": null,
+      "metadata_changed": 0,
+      "removed": 0,
+      "vendor": "atlassian"
+    },
+    {
+      "added": 6,
+      "feed": "aws-ip-ranges",
+      "instance": null,
+      "metadata_changed": 0,
+      "removed": 0,
+      "vendor": "aws"
+    },
+    {
+      "added": 0,
+      "feed": "github-meta",
+      "instance": null,
+      "metadata_changed": 0,
+      "removed": 0,
+      "vendor": "github"
+    },
+    {
+      "added": 0,
+      "feed": "google-cloud",
+      "instance": null,
+      "metadata_changed": 0,
+      "removed": 0,
+      "vendor": "google"
+    },
+    {
+      "added": 0,
+      "feed": "google-goog",
+      "instance": null,
+      "metadata_changed": 0,
+      "removed": 0,
+      "vendor": "google"
+    },
+    {
+      "added": 0,
+      "feed": "m365-endpoints",
+      "instance": "Worldwide",
+      "metadata_changed": 0,
+      "removed": 0,
+      "vendor": "m365"
+    }
+  ],
+  "to_date": "2026-06-12"
+}
