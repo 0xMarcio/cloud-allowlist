@@ -1,99 +1,43 @@
 {
   "details": {
-    "google/google-cloud": {
+    "aws/aws-ip-ranges": {
       "added": [
         {
-          "cidr": "136.23.64.0/18",
+          "cidr": "45.33.179.0/24",
           "metadata": {
-            "cidr": "136.23.64.0/18",
-            "extra": {
-              "scope": "us-east4",
-              "service": "Google Cloud"
-            },
+            "cidr": "45.33.179.0/24",
+            "extra": {},
             "family": 4,
-            "feed": "google-cloud",
-            "record_id": "google:google-cloud:4:136.23.64.0/18:Google Cloud:us-east4",
-            "region": "us-east4",
-            "service": "Google Cloud",
-            "vendor": "google"
+            "feed": "aws-ip-ranges",
+            "network_border_group": "us-east-1",
+            "record_id": "aws:4:45.33.179.0/24:AMAZON:us-east-1:us-east-1",
+            "region": "us-east-1",
+            "service": "AMAZON",
+            "vendor": "aws"
           },
-          "record_id": "google:google-cloud:4:136.23.64.0/18:Google Cloud:us-east4"
+          "record_id": "aws:4:45.33.179.0/24:AMAZON:us-east-1:us-east-1"
         },
         {
-          "cidr": "136.70.128.0/17",
+          "cidr": "2600:1f01:4900:b00::/56",
           "metadata": {
-            "cidr": "136.70.128.0/17",
-            "extra": {
-              "scope": "us-east4",
-              "service": "Google Cloud"
-            },
-            "family": 4,
-            "feed": "google-cloud",
-            "record_id": "google:google-cloud:4:136.70.128.0/17:Google Cloud:us-east4",
-            "region": "us-east4",
-            "service": "Google Cloud",
-            "vendor": "google"
+            "cidr": "2600:1f01:4900:b00::/56",
+            "extra": {},
+            "family": 6,
+            "feed": "aws-ip-ranges",
+            "network_border_group": "us-east-1",
+            "record_id": "aws:6:2600:1f01:4900:b00::/56:AMAZON:us-east-1:us-east-1",
+            "region": "us-east-1",
+            "service": "AMAZON",
+            "vendor": "aws"
           },
-          "record_id": "google:google-cloud:4:136.70.128.0/17:Google Cloud:us-east4"
-        },
-        {
-          "cidr": "136.70.64.0/18",
-          "metadata": {
-            "cidr": "136.70.64.0/18",
-            "extra": {
-              "scope": "us-east4",
-              "service": "Google Cloud"
-            },
-            "family": 4,
-            "feed": "google-cloud",
-            "record_id": "google:google-cloud:4:136.70.64.0/18:Google Cloud:us-east4",
-            "region": "us-east4",
-            "service": "Google Cloud",
-            "vendor": "google"
-          },
-          "record_id": "google:google-cloud:4:136.70.64.0/18:Google Cloud:us-east4"
-        },
-        {
-          "cidr": "136.71.0.0/16",
-          "metadata": {
-            "cidr": "136.71.0.0/16",
-            "extra": {
-              "scope": "us-central1",
-              "service": "Google Cloud"
-            },
-            "family": 4,
-            "feed": "google-cloud",
-            "record_id": "google:google-cloud:4:136.71.0.0/16:Google Cloud:us-central1",
-            "region": "us-central1",
-            "service": "Google Cloud",
-            "vendor": "google"
-          },
-          "record_id": "google:google-cloud:4:136.71.0.0/16:Google Cloud:us-central1"
+          "record_id": "aws:6:2600:1f01:4900:b00::/56:AMAZON:us-east-1:us-east-1"
         }
       ],
       "metadata_changed": [],
-      "removed": [
-        {
-          "cidr": "136.23.64.0/19",
-          "metadata": {
-            "cidr": "136.23.64.0/19",
-            "extra": {
-              "scope": "us-east4",
-              "service": "Google Cloud"
-            },
-            "family": 4,
-            "feed": "google-cloud",
-            "record_id": "google:google-cloud:4:136.23.64.0/19:Google Cloud:us-east4",
-            "region": "us-east4",
-            "service": "Google Cloud",
-            "vendor": "google"
-          },
-          "record_id": "google:google-cloud:4:136.23.64.0/19:Google Cloud:us-east4"
-        }
-      ]
+      "removed": []
     }
   },
-  "from_date": "2026-06-13",
+  "from_date": "2026-06-14",
   "has_prior_baseline": true,
   "message": null,
   "stale_feeds": [],
@@ -107,7 +51,7 @@
       "vendor": "atlassian"
     },
     {
-      "added": 0,
+      "added": 2,
       "feed": "aws-ip-ranges",
       "instance": null,
       "metadata_changed": 0,
@@ -123,11 +67,11 @@
       "vendor": "github"
     },
     {
-      "added": 4,
+      "added": 0,
       "feed": "google-cloud",
       "instance": null,
       "metadata_changed": 0,
-      "removed": 1,
+      "removed": 0,
       "vendor": "google"
     },
     {
@@ -147,5 +91,5 @@
       "vendor": "m365"
     }
   ],
-  "to_date": "2026-06-14"
+  "to_date": "2026-06-15"
 }
