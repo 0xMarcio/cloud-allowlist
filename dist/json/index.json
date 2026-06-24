@@ -1,7 +1,7 @@
 {
   "cidr_count": 19749,
-  "record_count": 25562,
-  "snapshot_date": "2026-06-23",
+  "record_count": 25563,
+  "snapshot_date": "2026-06-24",
   "vendors": {
     "atlassian": {
       "cidrs": [
@@ -10927,7 +10927,7 @@
         "2a05:d07f:e000::/40",
         "2a05:d07f:f000::/40"
       ],
-      "record_count": 16178
+      "record_count": 16179
     },
     "github": {
       "cidrs": [
