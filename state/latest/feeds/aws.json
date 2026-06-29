@@ -6,7 +6,7 @@
       "syncToken": "1782605225"
     },
     "feed": "aws-ip-ranges",
-    "fetch_status": "success",
+    "fetch_status": "cached",
     "record_count": 16366,
     "source_published_at": "2026-06-28-00-07-05",
     "source_version": "1782605225",
@@ -261872,5 +261872,5 @@
       "vendor": "aws"
     }
   ],
-  "snapshot_date": "2026-06-28"
+  "snapshot_date": "2026-06-29"
 }
