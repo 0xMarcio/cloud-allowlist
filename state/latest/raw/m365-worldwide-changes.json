@@ -1,14 +1,59 @@
 [
   {
-    "disposition": "Change",
-    "endpointSetId": 92,
-    "id": 1369,
+    "disposition": "Remove",
+    "endpointSetId": 105,
+    "id": 1376,
     "impact": "RemovedIpOrUrl",
+    "previous": {
+      "category": "Default",
+      "expressRoute": "False",
+      "notes": "Outlook for Android and iOS: Outlook Privacy",
+      "required": "False",
+      "serviceArea": "Common",
+      "tcpPorts": "443",
+      "udpPorts": null
+    },
     "remove": {
       "urls": [
-        "officecdn.microsoft.com.edgesuite.net"
+        "www.acompli.com"
       ]
     },
-    "version": "2026052900"
+    "version": "2026073100"
+  },
+  {
+    "add": {
+      "effectiveDate": "20260913",
+      "urls": [
+        "*.static.microsoft",
+        "*.usercontent.microsoft"
+      ]
+    },
+    "current": {
+      "category": "Default",
+      "expressRoute": "False",
+      "notes": "",
+      "required": "True",
+      "serviceArea": "Common",
+      "tcpPorts": "443",
+      "udpPorts": "443"
+    },
+    "disposition": "Add",
+    "endpointSetId": 193,
+    "id": 1382,
+    "impact": "MovedIpOrUrl",
+    "version": "2026081400"
+  },
+  {
+    "disposition": "Change",
+    "endpointSetId": 184,
+    "id": 1383,
+    "impact": "MovedIpOrUrl",
+    "remove": {
+      "urls": [
+        "*.static.microsoft",
+        "*.usercontent.microsoft"
+      ]
+    },
+    "version": "2026081400"
   }
 ]
